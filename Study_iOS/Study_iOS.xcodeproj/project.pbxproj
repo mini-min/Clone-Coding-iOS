@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		3983DF8226F36C3700539090 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3983DF8126F36C3700539090 /* Colors.xcassets */; };
 		3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983DF8426F42D9E00539090 /* SignUpViewController.swift */; };
 		3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983DF8626F42DAA00539090 /* SignUpStoryboard.storyboard */; };
+		64A69447135C8945ECBBAFD2 /* Pods_Study_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3930C0AB26F44277009B424C /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		3930C0AE26F444D2009B424C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3930C0B026F46A90009B424C /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		396641C526F5B0ED0041125D /* KakaoSDKCommon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = KakaoSDKCommon; sourceTree = "<group>"; };
 		3983DF3C26F3662A00539090 /* Study_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3983DF3F26F3662A00539090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3983DF4126F3662A00539090 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +36,9 @@
 		3983DF8126F36C3700539090 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3983DF8426F42D9E00539090 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3983DF8626F42DAA00539090 /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
+		65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1CBDB0F3C1238E346FF930 /* Pods-Study_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study_iOS.release.xcconfig"; path = "Target Support Files/Pods-Study_iOS/Pods-Study_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E3F3EA9AFE9AA33D9DFE4D86 /* Pods-Study_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Study_iOS/Pods-Study_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +46,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A69447135C8945ECBBAFD2 /* Pods_Study_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F52C340B387B1BCB8C59499 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				396641C526F5B0ED0041125D /* KakaoSDKCommon */,
+				E3F3EA9AFE9AA33D9DFE4D86 /* Pods-Study_iOS.debug.xcconfig */,
+				DB1CBDB0F3C1238E346FF930 /* Pods-Study_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3930C0AD26F4449E009B424C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +88,8 @@
 			children = (
 				3983DF3E26F3662A00539090 /* Study_iOS */,
 				3983DF3D26F3662A00539090 /* Products */,
+				0F52C340B387B1BCB8C59499 /* Pods */,
+				570CE84094E50409753549F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +140,14 @@
 			path = Resourcea;
 			sourceTree = "<group>";
 		};
+		570CE84094E50409753549F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3983DF6626F3662A00539090 /* Build configuration list for PBXNativeTarget "Study_iOS" */;
 			buildPhases = (
+				9D29D8FAFC9F338C7D9DAE86 /* [CP] Check Pods Manifest.lock */,
 				3983DF3826F3662A00539090 /* Sources */,
 				3983DF3926F3662A00539090 /* Frameworks */,
 				3983DF3A26F3662A00539090 /* Resources */,
+				1038F0F2AD54E730B9A24661 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +216,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1038F0F2AD54E730B9A24661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Study_iOS/Pods-Study_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Study_iOS/Pods-Study_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Study_iOS/Pods-Study_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D29D8FAFC9F338C7D9DAE86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Study_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3983DF3826F3662A00539090 /* Sources */ = {
@@ -335,10 +405,12 @@
 		};
 		3983DF6726F3662A00539090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F3EA9AFE9AA33D9DFE4D86 /* Pods-Study_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF6B89ULG6;
 				INFOPLIST_FILE = Study_iOS/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,10 +425,12 @@
 		};
 		3983DF6826F3662A00539090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1CBDB0F3C1238E346FF930 /* Pods-Study_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JF6B89ULG6;
 				INFOPLIST_FILE = Study_iOS/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
