@@ -6,9 +6,6 @@ target 'Study_iOS' do
   use_frameworks!
 
   # Pods for Study_iOS
-pod 'KakaoSDK'
-pod 'Alamofire'
-pod 'SnapKit'
-pod 'Kingfisher'
+pod 'KakaoSDKUser'
 
 end
