@@ -34,20 +34,20 @@ class SignInViewController: UIViewController {
     
     @IBAction func kakaoLoginButtonClicked(_ sender: Any) {
         
-//        // 카카오톡 설치 여부 확인
-//        if (UserApi.isKakaoTalkLoginAvailable()) {
-//            UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
-//                if let error = error {
-//                    print(error)
-//                }
-//                else {
-//                    print("loginWithKakaoTalk() success.")
-//
-//                    //do something
-//                    _ = oauthToken
-//                }
-//            }
-//        }
+        // 카카오톡 설치 여부 확인
+        if (UserApi.isKakaoTalkLoginAvailable()) {
+            UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("loginWithKakaoTalk() success.")
+                    
+                    //do something
+                    _ = oauthToken
+                }
+            }
+        }
 
         // 웹 브라우저로 카카오 로그인
         UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in

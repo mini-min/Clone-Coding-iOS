@@ -14,6 +14,9 @@ class SignUpViewController: UIViewController, UIGestureRecognizerDelegate, UIIma
     @IBOutlet weak var inputPW: UITextField!
     @IBOutlet weak var inputCheckPW: UITextField!
     
+    // 키보드 높이를 저장할 변수
+    var keyHeight: CGFloat?
+
     // 이미지로 연결되는 이미지 피커
     lazy var imagePicker: UIImagePickerController = {
         let picker: UIImagePickerController = UIImagePickerController()
@@ -29,6 +32,9 @@ class SignUpViewController: UIViewController, UIGestureRecognizerDelegate, UIIma
         tapGesture.delegate = self
         
         self.view.addGestureRecognizer(tapGesture)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
 
     }
     
@@ -55,6 +61,23 @@ class SignUpViewController: UIViewController, UIGestureRecognizerDelegate, UIIma
                 self.present(nextVC, animated: true, completion: nil)
             }
         }
+    }
+    
+    // 키보드가 나타날 때 생성할 메서드
+    @objc func keyboardWillShow(_ sender: Notification) {
+        let userInfo:NSDictionary = sender.userInfo! as NSDictionary
+        let keyboardFrame:NSValue = userInfo.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue
+        let keyboardRectangle = keyboardFrame.cgRectValue
+        let keyboardHeight = keyboardRectangle.height
+        keyHeight = keyboardHeight
+        
+        self.view.frame.size.height -= keyboardHeight
+    }
+    
+    // 키보드가 사라질 때 생성할 메서드
+    @objc func keyboardWillHide(_ sender: Notification) {
+        
+        self.view.frame.size.height += keyHeight!
     }
     
     // 이미지 피커가 표출되어있을 때, 취소를 클릭 시
