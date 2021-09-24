@@ -34,6 +34,8 @@
 		3983DF8226F36C3700539090 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3983DF8126F36C3700539090 /* Colors.xcassets */; };
 		3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983DF8426F42D9E00539090 /* SignUpViewController.swift */; };
 		3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983DF8626F42DAA00539090 /* SignUpStoryboard.storyboard */; };
+		39D530DE26FD9BAC00AD2F64 /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D530DD26FD9BAC00AD2F64 /* TestResultViewController.swift */; };
+		39D530E026FD9BB500AD2F64 /* TestResultStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D530DF26FD9BB500AD2F64 /* TestResultStoryboard.storyboard */; };
 		64A69447135C8945ECBBAFD2 /* Pods_Study_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		3983DF8126F36C3700539090 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3983DF8426F42D9E00539090 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3983DF8626F42DAA00539090 /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
+		39D530DD26FD9BAC00AD2F64 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
+		39D530DF26FD9BB500AD2F64 /* TestResultStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestResultStoryboard.storyboard; sourceTree = "<group>"; };
 		65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1CBDB0F3C1238E346FF930 /* Pods-Study_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study_iOS.release.xcconfig"; path = "Target Support Files/Pods-Study_iOS/Pods-Study_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E3F3EA9AFE9AA33D9DFE4D86 /* Pods-Study_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Study_iOS/Pods-Study_iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,10 +100,8 @@
 		392A1C9626FD846300BCD71A /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				392A1CA526FD917800BCD71A /* Models */,
-				392A1C9D26FD8E9200BCD71A /* Cells */,
-				392A1C9726FD850300BCD71A /* TestViewController.swift */,
-				392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */,
+				39D530DC26FD9B9500AD2F64 /* TestResult */,
+				39D530DA26FD9B3E00AD2F64 /* TestQuestion */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -274,6 +276,26 @@
 			path = Resourcea;
 			sourceTree = "<group>";
 		};
+		39D530DA26FD9B3E00AD2F64 /* TestQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				392A1C9726FD850300BCD71A /* TestViewController.swift */,
+				392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */,
+				392A1C9D26FD8E9200BCD71A /* Cells */,
+				392A1CA526FD917800BCD71A /* Models */,
+			);
+			path = TestQuestion;
+			sourceTree = "<group>";
+		};
+		39D530DC26FD9B9500AD2F64 /* TestResult */ = {
+			isa = PBXGroup;
+			children = (
+				39D530DD26FD9BAC00AD2F64 /* TestResultViewController.swift */,
+				39D530DF26FD9BB500AD2F64 /* TestResultStoryboard.storyboard */,
+			);
+			path = TestResult;
+			sourceTree = "<group>";
+		};
 		570CE84094E50409753549F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +367,7 @@
 				39516D9E26F70950001B89D9 /* SizeStoryboard.storyboard in Resources */,
 				3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */,
 				3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */,
+				39D530E026FD9BB500AD2F64 /* TestResultStoryboard.storyboard in Resources */,
 				39516D9826F70930001B89D9 /* HomeStoryboard.storyboard in Resources */,
 				3983DF7B26F36A5800539090 /* Assets.xcassets in Resources */,
 				39516DA026F70A19001B89D9 /* MyPageStoryboard.storyboard in Resources */,
@@ -412,6 +435,7 @@
 				39516D9026F708DB001B89D9 /* SearchViewController.swift in Sources */,
 				392A1C9826FD850300BCD71A /* TestViewController.swift in Sources */,
 				39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */,
+				39D530DE26FD9BAC00AD2F64 /* TestResultViewController.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
 				39516D9626F70921001B89D9 /* MyPageViewController.swift in Sources */,
 				392A1CA726FD92AC00BCD71A /* AnswerListDataModel.swift in Sources */,
