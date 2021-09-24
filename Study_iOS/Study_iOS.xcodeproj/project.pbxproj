@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392A1C9826FD850300BCD71A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1C9726FD850300BCD71A /* TestViewController.swift */; };
+		392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */; };
+		392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */; };
+		392A1CA726FD92AC00BCD71A /* AnswerListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1CA626FD92AC00BCD71A /* AnswerListDataModel.swift */; };
 		3930C0AA26F44271009B424C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930C0A926F44271009B424C /* SignInViewController.swift */; };
 		3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3930C0AB26F44277009B424C /* SignInStoryboard.storyboard */; };
 		3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930C0AE26F444D2009B424C /* UIView+Extension.swift */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		392A1C9726FD850300BCD71A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
+		392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
+		392A1CA626FD92AC00BCD71A /* AnswerListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerListDataModel.swift; sourceTree = "<group>"; };
 		3930C0A926F44271009B424C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3930C0AB26F44277009B424C /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		3930C0AE26F444D2009B424C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -83,6 +91,33 @@
 				DB1CBDB0F3C1238E346FF930 /* Pods-Study_iOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		392A1C9626FD846300BCD71A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				392A1CA526FD917800BCD71A /* Models */,
+				392A1C9D26FD8E9200BCD71A /* Cells */,
+				392A1C9726FD850300BCD71A /* TestViewController.swift */,
+				392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		392A1C9D26FD8E9200BCD71A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		392A1CA526FD917800BCD71A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				392A1CA626FD92AC00BCD71A /* AnswerListDataModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3930C0AD26F4449E009B424C /* Extensions */ = {
@@ -211,6 +246,7 @@
 		3983DF6F26F3670500539090 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				392A1C9626FD846300BCD71A /* Test */,
 				39516D8626F70756001B89D9 /* Base */,
 				3930C0B226F4C7C6009B424C /* Login */,
 			);
@@ -314,6 +350,7 @@
 				39516DA026F70A19001B89D9 /* MyPageStoryboard.storyboard in Resources */,
 				39516DA426F70B46001B89D9 /* BaseStoryboard.storyboard in Resources */,
 				3983DF8226F36C3700539090 /* Colors.xcassets in Resources */,
+				392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */,
 				3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */,
 				39516D9C26F7094A001B89D9 /* FriendsStoryboard.storyboard in Resources */,
 			);
@@ -373,9 +410,12 @@
 				39516D9226F708FC001B89D9 /* FriendsViewController.swift in Sources */,
 				3983DF4026F3662A00539090 /* AppDelegate.swift in Sources */,
 				39516D9026F708DB001B89D9 /* SearchViewController.swift in Sources */,
+				392A1C9826FD850300BCD71A /* TestViewController.swift in Sources */,
 				39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
 				39516D9626F70921001B89D9 /* MyPageViewController.swift in Sources */,
+				392A1CA726FD92AC00BCD71A /* AnswerListDataModel.swift in Sources */,
+				392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */,
 				3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */,
 				3983DF4226F3662A00539090 /* SceneDelegate.swift in Sources */,
 				39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */,

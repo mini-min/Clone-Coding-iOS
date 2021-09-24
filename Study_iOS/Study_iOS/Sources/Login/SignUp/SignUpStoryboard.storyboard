@@ -30,15 +30,6 @@
                                                 <color key="textColor" name="SpoTBlue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-Eq-qfx">
-                                                <rect key="frame" x="137" y="78" width="100" height="76"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <action selector="touchUpSelectImageButton:" destination="6BC-0B-148" eventType="touchUpInside" id="qBR-iX-97Z"/>
-                                                </connections>
-                                            </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5TE-11-6Rt">
                                                 <rect key="frame" x="137.66666666666666" y="67.666666666666657" width="100" height="98.666666666666671"/>
                                                 <color key="tintColor" name="SpoTBlue"/>
