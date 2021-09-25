@@ -9,6 +9,7 @@ import UIKit
 
 class TestViewController: UIViewController {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var answerTableView: UITableView!
     
     @IBOutlet weak var questionNumberLabel: UILabel!
@@ -17,6 +18,7 @@ class TestViewController: UIViewController {
     
     var answerList: [AnswerListDataModel] = []
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,13 +29,17 @@ class TestViewController: UIViewController {
         
     }
     
+    // MARK: - functions
     func setAnswerList() {
         answerList.append(contentsOf: [
+            AnswerListDataModel(title: "운동복이 다 똑같은 운동복이지."),
+            AnswerListDataModel(title: "이곳이 나의 패션쇼!"),
             AnswerListDataModel(title: "운동복이 다 똑같은 운동복이지."),
             AnswerListDataModel(title: "이곳이 나의 패션쇼!")
         ])
     }
     
+    // MARK: - IBActions
     // 이전 버튼 클릭 시
     @IBAction func previousButtonClicked(_ sender: Any) {
     }
@@ -44,11 +50,12 @@ class TestViewController: UIViewController {
     
 }
 
+// MARK: - Extensions
 extension TestViewController: UITableViewDelegate
 {
     // 한 행의 높이는 얼마?
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 66
     }
 }
 
@@ -64,6 +71,7 @@ extension TestViewController: UITableViewDataSource
         guard let answerCell = tableView.dequeueReusableCell(withIdentifier: AnswerTableViewCell.identifier, for: indexPath) as? AnswerTableViewCell else {return UITableViewCell()}
         
         answerCell.setData(title: answerList[indexPath.row].title)
+        answerCell.selectionStyle = .none
         
         return answerCell
     }
