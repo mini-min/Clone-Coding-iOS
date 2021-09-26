@@ -28,14 +28,6 @@
 		39516DA426F70B46001B89D9 /* BaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516DA326F70B46001B89D9 /* BaseStoryboard.storyboard */; };
 		39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516DA726F70D74001B89D9 /* BaseViewController.swift */; };
 		397A575926FEC68900AFCE59 /* QuestionListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A575826FEC68900AFCE59 /* QuestionListDataModel.swift */; };
-		397A575F26FECB0900AFCE59 /* FirstQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A575E26FECB0900AFCE59 /* FirstQuestionViewController.swift */; };
-		397A576126FECB1000AFCE59 /* FirstQuestionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397A576026FECB1000AFCE59 /* FirstQuestionStoryboard.storyboard */; };
-		397A576326FECB1B00AFCE59 /* SecondQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A576226FECB1B00AFCE59 /* SecondQuestionViewController.swift */; };
-		397A576526FECB2300AFCE59 /* SecondQuestionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397A576426FECB2300AFCE59 /* SecondQuestionStoryboard.storyboard */; };
-		397A576726FECB3600AFCE59 /* ThirdQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A576626FECB3600AFCE59 /* ThirdQuestionViewController.swift */; };
-		397A576926FECB3E00AFCE59 /* ThirdQuestionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397A576826FECB3E00AFCE59 /* ThirdQuestionStoryboard.storyboard */; };
-		397A576B26FECB4900AFCE59 /* FourthQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A576A26FECB4900AFCE59 /* FourthQuestionViewController.swift */; };
-		397A576D26FECB5000AFCE59 /* FourthQuestionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397A576C26FECB5000AFCE59 /* FourthQuestionStoryboard.storyboard */; };
 		3983DF4026F3662A00539090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983DF3F26F3662A00539090 /* AppDelegate.swift */; };
 		3983DF4226F3662A00539090 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983DF4126F3662A00539090 /* SceneDelegate.swift */; };
 		3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983DF4A26F3662A00539090 /* LaunchScreen.storyboard */; };
@@ -43,6 +35,8 @@
 		3983DF8226F36C3700539090 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3983DF8126F36C3700539090 /* Colors.xcassets */; };
 		3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983DF8426F42D9E00539090 /* SignUpViewController.swift */; };
 		3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983DF8626F42DAA00539090 /* SignUpStoryboard.storyboard */; };
+		39B5FC3B2700A97400486022 /* AddSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B5FC3A2700A97400486022 /* AddSizeViewController.swift */; };
+		39B5FC3D2700A98300486022 /* AddSizeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B5FC3C2700A98300486022 /* AddSizeStoryboard.storyboard */; };
 		39D530DE26FD9BAC00AD2F64 /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D530DD26FD9BAC00AD2F64 /* TestResultViewController.swift */; };
 		39D530E026FD9BB500AD2F64 /* TestResultStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D530DF26FD9BB500AD2F64 /* TestResultStoryboard.storyboard */; };
 		64A69447135C8945ECBBAFD2 /* Pods_Study_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */; };
@@ -70,14 +64,6 @@
 		39516DA326F70B46001B89D9 /* BaseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseStoryboard.storyboard; sourceTree = "<group>"; };
 		39516DA726F70D74001B89D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		397A575826FEC68900AFCE59 /* QuestionListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListDataModel.swift; sourceTree = "<group>"; };
-		397A575E26FECB0900AFCE59 /* FirstQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionViewController.swift; sourceTree = "<group>"; };
-		397A576026FECB1000AFCE59 /* FirstQuestionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstQuestionStoryboard.storyboard; sourceTree = "<group>"; };
-		397A576226FECB1B00AFCE59 /* SecondQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionViewController.swift; sourceTree = "<group>"; };
-		397A576426FECB2300AFCE59 /* SecondQuestionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondQuestionStoryboard.storyboard; sourceTree = "<group>"; };
-		397A576626FECB3600AFCE59 /* ThirdQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestionViewController.swift; sourceTree = "<group>"; };
-		397A576826FECB3E00AFCE59 /* ThirdQuestionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdQuestionStoryboard.storyboard; sourceTree = "<group>"; };
-		397A576A26FECB4900AFCE59 /* FourthQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuestionViewController.swift; sourceTree = "<group>"; };
-		397A576C26FECB5000AFCE59 /* FourthQuestionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthQuestionStoryboard.storyboard; sourceTree = "<group>"; };
 		3983DF3C26F3662A00539090 /* Study_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3983DF3F26F3662A00539090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3983DF4126F3662A00539090 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +73,8 @@
 		3983DF8126F36C3700539090 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3983DF8426F42D9E00539090 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3983DF8626F42DAA00539090 /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
+		39B5FC3A2700A97400486022 /* AddSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSizeViewController.swift; sourceTree = "<group>"; };
+		39B5FC3C2700A98300486022 /* AddSizeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSizeStoryboard.storyboard; sourceTree = "<group>"; };
 		39D530DD26FD9BAC00AD2F64 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
 		39D530DF26FD9BB500AD2F64 /* TestResultStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestResultStoryboard.storyboard; sourceTree = "<group>"; };
 		65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +173,7 @@
 		39516D8926F70851001B89D9 /* Size */ = {
 			isa = PBXGroup;
 			children = (
+				39B5FC392700A96700486022 /* AddSize */,
 				39516D9D26F70950001B89D9 /* SizeStoryboard.storyboard */,
 				39516D9326F7091A001B89D9 /* SizeViewController.swift */,
 			);
@@ -234,42 +223,6 @@
 				3930C0AB26F44277009B424C /* SignInStoryboard.storyboard */,
 			);
 			path = SignIn;
-			sourceTree = "<group>";
-		};
-		397A575A26FECACC00AFCE59 /* FirstQuestion */ = {
-			isa = PBXGroup;
-			children = (
-				397A575E26FECB0900AFCE59 /* FirstQuestionViewController.swift */,
-				397A576026FECB1000AFCE59 /* FirstQuestionStoryboard.storyboard */,
-			);
-			path = FirstQuestion;
-			sourceTree = "<group>";
-		};
-		397A575B26FECAD700AFCE59 /* SecondQuestion */ = {
-			isa = PBXGroup;
-			children = (
-				397A576226FECB1B00AFCE59 /* SecondQuestionViewController.swift */,
-				397A576426FECB2300AFCE59 /* SecondQuestionStoryboard.storyboard */,
-			);
-			path = SecondQuestion;
-			sourceTree = "<group>";
-		};
-		397A575C26FECAE000AFCE59 /* ThirdQuestion */ = {
-			isa = PBXGroup;
-			children = (
-				397A576626FECB3600AFCE59 /* ThirdQuestionViewController.swift */,
-				397A576826FECB3E00AFCE59 /* ThirdQuestionStoryboard.storyboard */,
-			);
-			path = ThirdQuestion;
-			sourceTree = "<group>";
-		};
-		397A575D26FECAE900AFCE59 /* FourthQuestion */ = {
-			isa = PBXGroup;
-			children = (
-				397A576A26FECB4900AFCE59 /* FourthQuestionViewController.swift */,
-				397A576C26FECB5000AFCE59 /* FourthQuestionStoryboard.storyboard */,
-			);
-			path = FourthQuestion;
 			sourceTree = "<group>";
 		};
 		3983DF3326F3662A00539090 = {
@@ -331,13 +284,18 @@
 			path = Resourcea;
 			sourceTree = "<group>";
 		};
+		39B5FC392700A96700486022 /* AddSize */ = {
+			isa = PBXGroup;
+			children = (
+				39B5FC3A2700A97400486022 /* AddSizeViewController.swift */,
+				39B5FC3C2700A98300486022 /* AddSizeStoryboard.storyboard */,
+			);
+			path = AddSize;
+			sourceTree = "<group>";
+		};
 		39D530DA26FD9B3E00AD2F64 /* TestQuestion */ = {
 			isa = PBXGroup;
 			children = (
-				397A575A26FECACC00AFCE59 /* FirstQuestion */,
-				397A575B26FECAD700AFCE59 /* SecondQuestion */,
-				397A575C26FECAE000AFCE59 /* ThirdQuestion */,
-				397A575D26FECAE900AFCE59 /* FourthQuestion */,
 				392A1C9726FD850300BCD71A /* TestViewController.swift */,
 				392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */,
 				392A1C9D26FD8E9200BCD71A /* Cells */,
@@ -428,14 +386,11 @@
 				3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */,
 				39D530E026FD9BB500AD2F64 /* TestResultStoryboard.storyboard in Resources */,
 				39516D9826F70930001B89D9 /* HomeStoryboard.storyboard in Resources */,
-				397A576126FECB1000AFCE59 /* FirstQuestionStoryboard.storyboard in Resources */,
-				397A576D26FECB5000AFCE59 /* FourthQuestionStoryboard.storyboard in Resources */,
 				3983DF7B26F36A5800539090 /* Assets.xcassets in Resources */,
 				39516DA026F70A19001B89D9 /* MyPageStoryboard.storyboard in Resources */,
-				397A576926FECB3E00AFCE59 /* ThirdQuestionStoryboard.storyboard in Resources */,
 				39516DA426F70B46001B89D9 /* BaseStoryboard.storyboard in Resources */,
-				397A576526FECB2300AFCE59 /* SecondQuestionStoryboard.storyboard in Resources */,
 				3983DF8226F36C3700539090 /* Colors.xcassets in Resources */,
+				39B5FC3D2700A98300486022 /* AddSizeStoryboard.storyboard in Resources */,
 				392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */,
 				3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */,
 				39516D9C26F7094A001B89D9 /* FriendsStoryboard.storyboard in Resources */,
@@ -492,8 +447,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3930C0AA26F44271009B424C /* SignInViewController.swift in Sources */,
-				397A575F26FECB0900AFCE59 /* FirstQuestionViewController.swift in Sources */,
-				397A576726FECB3600AFCE59 /* ThirdQuestionViewController.swift in Sources */,
 				39516D9426F7091A001B89D9 /* SizeViewController.swift in Sources */,
 				39516D9226F708FC001B89D9 /* FriendsViewController.swift in Sources */,
 				3983DF4026F3662A00539090 /* AppDelegate.swift in Sources */,
@@ -504,12 +457,11 @@
 				39D530DE26FD9BAC00AD2F64 /* TestResultViewController.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
 				39516D9626F70921001B89D9 /* MyPageViewController.swift in Sources */,
-				397A576326FECB1B00AFCE59 /* SecondQuestionViewController.swift in Sources */,
-				397A576B26FECB4900AFCE59 /* FourthQuestionViewController.swift in Sources */,
 				392A1CA726FD92AC00BCD71A /* AnswerListDataModel.swift in Sources */,
 				392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */,
 				3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */,
 				3983DF4226F3662A00539090 /* SceneDelegate.swift in Sources */,
+				39B5FC3B2700A97400486022 /* AddSizeViewController.swift in Sources */,
 				39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */,
 				3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */,
 			);

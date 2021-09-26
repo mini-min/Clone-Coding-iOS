@@ -1,13 +1,13 @@
 //
-//  ThirdQuestionViewController.swift
+//  AddSizeViewController.swift
 //  Study_iOS
 //
-//  Created by 민 on 2021/09/25.
+//  Created by 민 on 2021/09/26.
 //
 
 import UIKit
 
-class ThirdQuestionViewController: UIViewController {
+class AddSizeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
