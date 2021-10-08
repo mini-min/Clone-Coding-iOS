@@ -8,14 +8,12 @@
 import Foundation
 import UIKit
 
-struct QuestionListDataModel
-{
+struct QuestionListDataModel {
     var questionNumber: String
     var questionTitle: String
     var data: [StyleQuestionData]?
 }
 
-struct StyleQuestionData
-{
+struct StyleQuestionData {
     var answerTitle: String
 }

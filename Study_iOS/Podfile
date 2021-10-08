@@ -7,5 +7,6 @@ target 'Study_iOS' do
 
   # Pods for Study_iOS
 pod 'KakaoSDKUser'
+pod 'SwiftLint'
 
 end

@@ -1,0 +1,11 @@
+disabled_rules:
+- line_length
+- identifier_name
+- trailing_whitespace
+- nesting
+- function_parameter_count
+included:
+excluded:
+- Study_iOS/Application/AppDelegate.swift
+- Study_iOS/Application/SceneDelegate.swift
+- Pods

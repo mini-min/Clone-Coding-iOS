@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-struct AnswerListDataModel
-{
+struct AnswerListDataModel {
     var title: String
 }

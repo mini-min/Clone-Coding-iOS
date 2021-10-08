@@ -13,37 +13,36 @@ import KakaoSDKCommon
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var idTextField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
     @IBAction func tapView(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
-    
+
     @IBAction func singInButtonClicked(_ sender: Any) {
     }
-    
+
     @IBAction func signUpButtonClicked(_ sender: Any) {
         guard let nextVC = UIStoryboard(name: "SignUpStoryboard", bundle: nil).instantiateViewController(identifier: "SignUpViewController") as? SignUpViewController else { return }
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
-    
+
     @IBAction func kakaoLoginButtonClicked(_ sender: Any) {
-        
+
         // 카카오톡 설치 여부 확인
-        if (UserApi.isKakaoTalkLoginAvailable()) {
+        if UserApi.isKakaoTalkLoginAvailable() {
             UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
                 if let error = error {
                     print(error)
-                }
-                else {
+                } else {
                     print("loginWithKakaoTalk() success.")
-                    
-                    //do something
+
+                    // do something
                     _ = oauthToken
                 }
             }
@@ -53,17 +52,16 @@ class SignInViewController: UIViewController {
         UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
             if let error = error {
                 print(error)
-            }
-            else {
+            } else {
                 print("loginWithKakaoAccount() success.")
 
-                //do something
-                let _ = oauthToken
+                // do something
+                _ = oauthToken
             }
         }
 
         print("loginKakao() called.")
 
     }
-    
+
 }

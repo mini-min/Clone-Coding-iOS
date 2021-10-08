@@ -107,12 +107,7 @@
                                         <color key="backgroundColor" name="Blue4"/>
                                         <color key="tintColor" name="SpoTBlue"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="다음"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
+                                        <buttonConfiguration key="configuration" style="plain" title="다음" subtitle="버튼을 누르면" titleAlignment="center"/>
                                         <connections>
                                             <action selector="nextButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VYQ-eP-QVZ"/>
                                         </connections>
@@ -142,6 +137,8 @@
                     </view>
                     <connections>
                         <outlet property="answerTableView" destination="iPi-C5-yug" id="eP0-cf-B41"/>
+                        <outlet property="nextButton" destination="DnN-E9-adA" id="AXb-fp-vOG"/>
+                        <outlet property="prevButton" destination="K7A-un-yZK" id="y7v-wK-E46"/>
                         <outlet property="questionImageView" destination="bc7-UG-DPf" id="t97-rf-tW5"/>
                         <outlet property="questionNumberLabel" destination="UTa-hb-R2k" id="ZhH-k0-sBD"/>
                         <outlet property="questionTitleLabel" destination="HTe-La-EFv" id="Eul-Rc-L5b"/>

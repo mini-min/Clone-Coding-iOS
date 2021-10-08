@@ -13,7 +13,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="swu-zk-lmu">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="6BC-0B-148" customClass="SignUpViewController" customModule="Study_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" automaticallyAdjustsScrollViewInsets="NO" id="6BC-0B-148" customClass="SignUpViewController" customModule="Study_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgv-E2-o4t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,22 +49,22 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u7B-yX-jYU">
                                                 <rect key="frame" x="40" y="268" width="295" height="220"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름(닉네임)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lJ9-5b-nqW">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름 (닉네임)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jFZ-em-cxJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디 입력" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nEy-p3-TSY">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디 입력" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="x13-EE-PMq">
                                                         <rect key="frame" x="0.0" y="60" width="295" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dqz-IM-aDW">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0Z9-TG-4Gn">
                                                         <rect key="frame" x="0.0" y="120" width="295" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fci-Se-YZG">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lva-Zm-vMT">
                                                         <rect key="frame" x="0.0" y="180" width="295" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -143,10 +143,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="inputCheckPW" destination="fci-Se-YZG" id="VLy-hz-Lb1"/>
-                        <outlet property="inputID" destination="nEy-p3-TSY" id="aMO-Yu-lde"/>
-                        <outlet property="inputName" destination="lJ9-5b-nqW" id="5SJ-L1-2Cl"/>
-                        <outlet property="inputPW" destination="Dqz-IM-aDW" id="aol-SD-BKn"/>
+                        <outlet property="inputCheckPW" destination="lva-Zm-vMT" id="9kY-r1-8ee"/>
+                        <outlet property="inputID" destination="x13-EE-PMq" id="TlA-XY-Ont"/>
+                        <outlet property="inputName" destination="jFZ-em-cxJ" id="hIH-Qu-fYg"/>
+                        <outlet property="inputPW" destination="0Z9-TG-4Gn" id="TgP-HL-FCj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wru-Fc-Iro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

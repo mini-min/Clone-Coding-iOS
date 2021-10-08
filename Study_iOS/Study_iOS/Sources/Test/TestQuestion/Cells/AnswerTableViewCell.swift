@@ -10,9 +10,9 @@ import UIKit
 class AnswerTableViewCell: UITableViewCell {
 
     static let identifier: String = "AnswerTableViewCell"
-    
+
     @IBOutlet weak var answerLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,7 +30,7 @@ class AnswerTableViewCell: UITableViewCell {
             contentView.layer.borderColor = UIColor.lightGray.cgColor
         }
     }
-    
+
     // Cell 사이에 간격 inset
     override func layoutSubviews() {
         super.layoutSubviews()

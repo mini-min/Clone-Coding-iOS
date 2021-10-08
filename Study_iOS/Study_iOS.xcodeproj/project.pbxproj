@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3900A4A8271015680022FC81 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900A4A7271015680022FC81 /* UIViewController+Extension.swift */; };
 		392A1C9826FD850300BCD71A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1C9726FD850300BCD71A /* TestViewController.swift */; };
 		392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */; };
 		392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */; };
@@ -15,6 +16,8 @@
 		3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3930C0AB26F44277009B424C /* SignInStoryboard.storyboard */; };
 		3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930C0AE26F444D2009B424C /* UIView+Extension.swift */; };
 		3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930C0B026F46A90009B424C /* CALayer+Extension.swift */; };
+		39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */; };
+		394F315227082B7200C83291 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 394F315127082B7200C83291 /* .swiftlint.yml */; };
 		39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D8D26F708D4001B89D9 /* HomeViewController.swift */; };
 		39516D9026F708DB001B89D9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D8F26F708DB001B89D9 /* SearchViewController.swift */; };
 		39516D9226F708FC001B89D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D9126F708FC001B89D9 /* FriendsViewController.swift */; };
@@ -43,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3900A4A7271015680022FC81 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		392A1C9726FD850300BCD71A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		3930C0AB26F44277009B424C /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		3930C0AE26F444D2009B424C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3930C0B026F46A90009B424C /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		394F315127082B7200C83291 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		39516D8D26F708D4001B89D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		39516D8F26F708DB001B89D9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		39516D9126F708FC001B89D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +140,8 @@
 			children = (
 				3930C0AE26F444D2009B424C /* UIView+Extension.swift */,
 				3930C0B026F46A90009B424C /* CALayer+Extension.swift */,
+				39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */,
+				3900A4A7271015680022FC81 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 		3983DF3326F3662A00539090 = {
 			isa = PBXGroup;
 			children = (
+				394F315127082B7200C83291 /* .swiftlint.yml */,
 				3983DF3E26F3662A00539090 /* Study_iOS */,
 				3983DF3D26F3662A00539090 /* Products */,
 				0F52C340B387B1BCB8C59499 /* Pods */,
@@ -333,6 +342,7 @@
 				3983DF3926F3662A00539090 /* Frameworks */,
 				3983DF3A26F3662A00539090 /* Resources */,
 				1038F0F2AD54E730B9A24661 /* [CP] Embed Pods Frameworks */,
+				394F31502708296400C83291 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -380,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394F315227082B7200C83291 /* .swiftlint.yml in Resources */,
 				39516D9A26F7093D001B89D9 /* SearchStoryboard.storyboard in Resources */,
 				39516D9E26F70950001B89D9 /* SizeStoryboard.storyboard in Resources */,
 				3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */,
@@ -416,6 +427,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Study_iOS/Pods-Study_iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		394F31502708296400C83291 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		9D29D8FAFC9F338C7D9DAE86 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -456,12 +484,14 @@
 				39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */,
 				39D530DE26FD9BAC00AD2F64 /* TestResultViewController.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
+				3900A4A8271015680022FC81 /* UIViewController+Extension.swift in Sources */,
 				39516D9626F70921001B89D9 /* MyPageViewController.swift in Sources */,
 				392A1CA726FD92AC00BCD71A /* AnswerListDataModel.swift in Sources */,
 				392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */,
 				3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */,
 				3983DF4226F3662A00539090 /* SceneDelegate.swift in Sources */,
 				39B5FC3B2700A97400486022 /* AddSizeViewController.swift in Sources */,
+				39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */,
 				39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */,
 				3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */,
 			);

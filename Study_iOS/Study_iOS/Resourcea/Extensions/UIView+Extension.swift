@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-//@IBDesignable
+// @IBDesignable
 extension UIView {
-    
+
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -20,8 +20,7 @@ extension UIView {
             layer.cornerRadius = newValue
         }
     }
-    
-    
+
     @IBInspectable
     var borderWidth: CGFloat {
         get {
@@ -31,7 +30,7 @@ extension UIView {
             layer.borderWidth = newValue
         }
     }
-    
+
     @IBInspectable
     var borderColor: UIColor? {
         get {
@@ -63,4 +62,3 @@ extension UIView {
         return view
     }
 }
-

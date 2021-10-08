@@ -22,49 +22,49 @@ public class Auth {
     let sdkVersionKey = "com.kakao.sdk.version"
     static public let retryTokenRefreshCount = 3
     static public let shared = Auth()
-    
+
     public var tokenManager: TokenManagable
-    
-    public init(tokenManager : TokenManagable = TokenManager.manager) {
+
+    public init(tokenManager: TokenManagable = TokenManager.manager) {
         self.tokenManager = tokenManager
-        
+
         initSession()
 
         if tokenManager is KakaoSDKAuth.TokenManager {
             MigrateManager.checkSdkVersionForMigration()
         }
     }
-    
+
     func initSession() {
         let interceptor = Interceptor(adapter: AuthRequestAdapter(), retrier: AuthRequestRetrier())
         API.addSession(type: .AuthApi, session: Session(configuration: URLSessionConfiguration.default, interceptor: interceptor))
         API.addSession(type: .RxAuthApi, session: Session(configuration: URLSessionConfiguration.default, interceptor: AuthRequestAdapter()))
-        
+
         SdkLog.d(">>>> \(API.sessions)")
     }
-    
+
     /// ## 커스텀 토큰 관리자
     /// TokenManagable 프로토콜을 구현하여 직접 토큰 관리자를 구현할 수 있습니다.
     public func setTokenManager(_ tokenManager: TokenManagable = TokenManager.manager) {
         self.tokenManager = tokenManager
     }
-    
+
     public func responseData(_ HTTPMethod: Alamofire.HTTPMethod,
                              _ url: String,
                              parameters: [String: Any]? = nil,
                              headers: [String: String]? = nil,
                              apiType: ApiType,
                              completion: @escaping (HTTPURLResponse?, Data?, Error?) -> Void) {
-        
+
         API.responseData(HTTPMethod, url, parameters: parameters, headers: headers, sessionType: .AuthApi, apiType: apiType, completion: completion)
     }
-    
+
     public func upload(_ HTTPMethod: Alamofire.HTTPMethod,
                        _ url: String,
                        images: [UIImage?] = [],
                        headers: [String: String]? = nil,
                        apiType: ApiType,
                        completion: @escaping (HTTPURLResponse?, Data?, Error?) -> Void) {
-        API.upload(HTTPMethod, url, images:images, headers: headers, apiType: apiType, completion: completion)
+        API.upload(HTTPMethod, url, images: images, headers: headers, apiType: apiType, completion: completion)
     }
 }
