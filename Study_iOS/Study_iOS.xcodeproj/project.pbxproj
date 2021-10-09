@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3900A4A8271015680022FC81 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3900A4A7271015680022FC81 /* UIViewController+Extension.swift */; };
 		392A1C9826FD850300BCD71A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1C9726FD850300BCD71A /* TestViewController.swift */; };
 		392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */; };
 		392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */; };
@@ -46,7 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3900A4A7271015680022FC81 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		392A1C9726FD850300BCD71A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 				3930C0AE26F444D2009B424C /* UIView+Extension.swift */,
 				3930C0B026F46A90009B424C /* CALayer+Extension.swift */,
 				39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */,
-				3900A4A7271015680022FC81 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -484,7 +481,6 @@
 				39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */,
 				39D530DE26FD9BAC00AD2F64 /* TestResultViewController.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
-				3900A4A8271015680022FC81 /* UIViewController+Extension.swift in Sources */,
 				39516D9626F70921001B89D9 /* MyPageViewController.swift in Sources */,
 				392A1CA726FD92AC00BCD71A /* AnswerListDataModel.swift in Sources */,
 				392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */,
