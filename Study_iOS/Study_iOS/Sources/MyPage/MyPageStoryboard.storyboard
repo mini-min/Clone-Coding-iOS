@@ -37,7 +37,6 @@
                             <constraint firstItem="wdj-cv-lMx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="Qcx-5A-wSw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="person.crop.circle" catalog="system" id="BxV-Ah-jdx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,7 +45,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

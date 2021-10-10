@@ -161,7 +161,6 @@
 				39516D8A26F7087B001B89D9 /* Search */,
 				39516D8B26F708AE001B89D9 /* Friends */,
 				39516D8926F70851001B89D9 /* Size */,
-				39516D8826F70846001B89D9 /* MyPage */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -262,6 +261,7 @@
 		3983DF6F26F3670500539090 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				39516D8826F70846001B89D9 /* MyPage */,
 				392A1C9626FD846300BCD71A /* Test */,
 				39516D8626F70756001B89D9 /* Base */,
 				3930C0B226F4C7C6009B424C /* Login */,
