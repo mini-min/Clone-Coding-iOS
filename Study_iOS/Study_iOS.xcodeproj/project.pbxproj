@@ -17,19 +17,24 @@
 		3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930C0B026F46A90009B424C /* CALayer+Extension.swift */; };
 		39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */; };
 		394F315227082B7200C83291 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 394F315127082B7200C83291 /* .swiftlint.yml */; };
+		3950010E271582ED00B35B4E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950010D271582ED00B35B4E /* Friend.swift */; };
 		39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D8D26F708D4001B89D9 /* HomeViewController.swift */; };
 		39516D9026F708DB001B89D9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D8F26F708DB001B89D9 /* SearchViewController.swift */; };
 		39516D9226F708FC001B89D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D9126F708FC001B89D9 /* FriendsViewController.swift */; };
 		39516D9426F7091A001B89D9 /* SizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D9326F7091A001B89D9 /* SizeViewController.swift */; };
-		39516D9626F70921001B89D9 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D9526F70921001B89D9 /* MyPageViewController.swift */; };
 		39516D9826F70930001B89D9 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516D9726F70930001B89D9 /* HomeStoryboard.storyboard */; };
 		39516D9A26F7093D001B89D9 /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516D9926F7093D001B89D9 /* SearchStoryboard.storyboard */; };
 		39516D9C26F7094A001B89D9 /* FriendsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516D9B26F7094A001B89D9 /* FriendsStoryboard.storyboard */; };
 		39516D9E26F70950001B89D9 /* SizeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516D9D26F70950001B89D9 /* SizeStoryboard.storyboard */; };
-		39516DA026F70A19001B89D9 /* MyPageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516D9F26F70A19001B89D9 /* MyPageStoryboard.storyboard */; };
 		39516DA426F70B46001B89D9 /* BaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516DA326F70B46001B89D9 /* BaseStoryboard.storyboard */; };
 		39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516DA726F70D74001B89D9 /* BaseViewController.swift */; };
 		397A575926FEC68900AFCE59 /* QuestionListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A575826FEC68900AFCE59 /* QuestionListDataModel.swift */; };
+		3983C77C2716E438004E4790 /* CardSwiperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C77B2716E438004E4790 /* CardSwiperViewController.swift */; };
+		3983C77E2716E44D004E4790 /* CardSwiperStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983C77D2716E44D004E4790 /* CardSwiperStoryboard.storyboard */; };
+		3983C7832716E490004E4790 /* FrontCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C7812716E490004E4790 /* FrontCardViewCell.swift */; };
+		3983C7842716E490004E4790 /* FrontCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3983C7822716E490004E4790 /* FrontCardViewCell.xib */; };
+		3983C7872716E4A0004E4790 /* BackCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C7852716E4A0004E4790 /* BackCardViewCell.swift */; };
+		3983C7882716E4A0004E4790 /* BackCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3983C7862716E4A0004E4790 /* BackCardViewCell.xib */; };
 		3983DF4026F3662A00539090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983DF3F26F3662A00539090 /* AppDelegate.swift */; };
 		3983DF4226F3662A00539090 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983DF4126F3662A00539090 /* SceneDelegate.swift */; };
 		3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983DF4A26F3662A00539090 /* LaunchScreen.storyboard */; };
@@ -55,19 +60,24 @@
 		3930C0B026F46A90009B424C /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
 		39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		394F315127082B7200C83291 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		3950010D271582ED00B35B4E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		39516D8D26F708D4001B89D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		39516D8F26F708DB001B89D9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		39516D9126F708FC001B89D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		39516D9326F7091A001B89D9 /* SizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeViewController.swift; sourceTree = "<group>"; };
-		39516D9526F70921001B89D9 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		39516D9726F70930001B89D9 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		39516D9926F7093D001B89D9 /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
 		39516D9B26F7094A001B89D9 /* FriendsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendsStoryboard.storyboard; sourceTree = "<group>"; };
 		39516D9D26F70950001B89D9 /* SizeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SizeStoryboard.storyboard; sourceTree = "<group>"; };
-		39516D9F26F70A19001B89D9 /* MyPageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPageStoryboard.storyboard; sourceTree = "<group>"; };
 		39516DA326F70B46001B89D9 /* BaseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseStoryboard.storyboard; sourceTree = "<group>"; };
 		39516DA726F70D74001B89D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		397A575826FEC68900AFCE59 /* QuestionListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListDataModel.swift; sourceTree = "<group>"; };
+		3983C77B2716E438004E4790 /* CardSwiperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwiperViewController.swift; sourceTree = "<group>"; };
+		3983C77D2716E44D004E4790 /* CardSwiperStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardSwiperStoryboard.storyboard; sourceTree = "<group>"; };
+		3983C7812716E490004E4790 /* FrontCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardViewCell.swift; sourceTree = "<group>"; };
+		3983C7822716E490004E4790 /* FrontCardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrontCardViewCell.xib; sourceTree = "<group>"; };
+		3983C7852716E4A0004E4790 /* BackCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardViewCell.swift; sourceTree = "<group>"; };
+		3983C7862716E4A0004E4790 /* BackCardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackCardViewCell.xib; sourceTree = "<group>"; };
 		3983DF3C26F3662A00539090 /* Study_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3983DF3F26F3662A00539090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3983DF4126F3662A00539090 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,15 +153,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3930C0B226F4C7C6009B424C /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				39516DA626F70CC5001B89D9 /* SignIn */,
-				39516DA526F70CBA001B89D9 /* SignUp */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		39516D8626F70756001B89D9 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,15 +164,6 @@
 				39516D8926F70851001B89D9 /* Size */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		39516D8826F70846001B89D9 /* MyPage */ = {
-			isa = PBXGroup;
-			children = (
-				39516D9F26F70A19001B89D9 /* MyPageStoryboard.storyboard */,
-				39516D9526F70921001B89D9 /* MyPageViewController.swift */,
-			);
-			path = MyPage;
 			sourceTree = "<group>";
 		};
 		39516D8926F70851001B89D9 /* Size */ = {
@@ -229,6 +221,19 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
+		3983C77A2716E414004E4790 /* CardSwiper */ = {
+			isa = PBXGroup;
+			children = (
+				3983C77B2716E438004E4790 /* CardSwiperViewController.swift */,
+				3983C77D2716E44D004E4790 /* CardSwiperStoryboard.storyboard */,
+				3983C7812716E490004E4790 /* FrontCardViewCell.swift */,
+				3983C7822716E490004E4790 /* FrontCardViewCell.xib */,
+				3983C7852716E4A0004E4790 /* BackCardViewCell.swift */,
+				3983C7862716E4A0004E4790 /* BackCardViewCell.xib */,
+			);
+			path = CardSwiper;
+			sourceTree = "<group>";
+		};
 		3983DF3326F3662A00539090 = {
 			isa = PBXGroup;
 			children = (
@@ -261,10 +266,12 @@
 		3983DF6F26F3670500539090 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				39516D8826F70846001B89D9 /* MyPage */,
+				3983C77A2716E414004E4790 /* CardSwiper */,
+				39516DA526F70CBA001B89D9 /* SignUp */,
+				39516DA626F70CC5001B89D9 /* SignIn */,
 				392A1C9626FD846300BCD71A /* Test */,
 				39516D8626F70756001B89D9 /* Base */,
-				3930C0B226F4C7C6009B424C /* Login */,
+				3950010D271582ED00B35B4E /* Friend.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -391,16 +398,18 @@
 				39516D9A26F7093D001B89D9 /* SearchStoryboard.storyboard in Resources */,
 				39516D9E26F70950001B89D9 /* SizeStoryboard.storyboard in Resources */,
 				3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */,
+				3983C7842716E490004E4790 /* FrontCardViewCell.xib in Resources */,
 				3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */,
 				39D530E026FD9BB500AD2F64 /* TestResultStoryboard.storyboard in Resources */,
 				39516D9826F70930001B89D9 /* HomeStoryboard.storyboard in Resources */,
 				3983DF7B26F36A5800539090 /* Assets.xcassets in Resources */,
-				39516DA026F70A19001B89D9 /* MyPageStoryboard.storyboard in Resources */,
+				3983C77E2716E44D004E4790 /* CardSwiperStoryboard.storyboard in Resources */,
 				39516DA426F70B46001B89D9 /* BaseStoryboard.storyboard in Resources */,
 				3983DF8226F36C3700539090 /* Colors.xcassets in Resources */,
 				39B5FC3D2700A98300486022 /* AddSizeStoryboard.storyboard in Resources */,
 				392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */,
 				3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */,
+				3983C7882716E4A0004E4790 /* BackCardViewCell.xib in Resources */,
 				39516D9C26F7094A001B89D9 /* FriendsStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,15 +487,18 @@
 				397A575926FEC68900AFCE59 /* QuestionListDataModel.swift in Sources */,
 				39516D9026F708DB001B89D9 /* SearchViewController.swift in Sources */,
 				392A1C9826FD850300BCD71A /* TestViewController.swift in Sources */,
+				3950010E271582ED00B35B4E /* Friend.swift in Sources */,
 				39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */,
 				39D530DE26FD9BAC00AD2F64 /* TestResultViewController.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
-				39516D9626F70921001B89D9 /* MyPageViewController.swift in Sources */,
 				392A1CA726FD92AC00BCD71A /* AnswerListDataModel.swift in Sources */,
 				392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */,
 				3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */,
 				3983DF4226F3662A00539090 /* SceneDelegate.swift in Sources */,
+				3983C7872716E4A0004E4790 /* BackCardViewCell.swift in Sources */,
 				39B5FC3B2700A97400486022 /* AddSizeViewController.swift in Sources */,
+				3983C7832716E490004E4790 /* FrontCardViewCell.swift in Sources */,
+				3983C77C2716E438004E4790 /* CardSwiperViewController.swift in Sources */,
 				39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */,
 				39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */,
 				3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */,
