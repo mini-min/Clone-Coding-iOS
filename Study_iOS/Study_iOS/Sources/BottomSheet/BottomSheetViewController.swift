@@ -35,6 +35,15 @@ class BottomSheetViewController: UIViewController {
         return view
     }()
     
+    // dismiss Indicator View UI 구성 부분
+    private let dismissIndicatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .systemGray2
+        view.layer.cornerRadius = 3
+        
+        return view
+    }()
+    
     // MARK: - @IBOutlet Properties
     
     // MARK: - View Life Cycle
@@ -61,6 +70,7 @@ class BottomSheetViewController: UIViewController {
     private func setupUI() {
         view.addSubview(dimmedBackView)
         view.addSubview(bottomSheetView)
+        view.addSubview(dismissIndicatorView)
         
         dimmedBackView.alpha = 0.0
         setupLayout()
@@ -83,6 +93,15 @@ class BottomSheetViewController: UIViewController {
             bottomSheetView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             bottomSheetView.heightAnchor.constraint(equalToConstant: bottomHeight)
         ])
+        
+        dismissIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            dismissIndicatorView.widthAnchor.constraint(equalToConstant: 102),
+            dismissIndicatorView.heightAnchor.constraint(equalToConstant: 7),
+            dismissIndicatorView.topAnchor.constraint(equalTo: bottomSheetView.topAnchor, constant: 12),
+            dismissIndicatorView.centerXAnchor.constraint(equalTo: bottomSheetView.centerXAnchor)
+        ])
+        
     }
     
     // 바텀 시트 표출 애니메이션
