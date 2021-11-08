@@ -87,11 +87,13 @@ class BottomSheetViewController: UIViewController {
         ])
         
         bottomSheetView.translatesAutoresizingMaskIntoConstraints = false
+        let topConstant = view.safeAreaInsets.bottom + view.safeAreaLayoutGuide.layoutFrame.height
+        bottomSheetViewTopConstraint = bottomSheetView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: topConstant)
         NSLayoutConstraint.activate([
-            bottomSheetView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            bottomSheetView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            bottomSheetView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            bottomSheetView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             bottomSheetView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            bottomSheetView.heightAnchor.constraint(equalToConstant: bottomHeight)
+            bottomSheetViewTopConstraint
         ])
         
         dismissIndicatorView.translatesAutoresizingMaskIntoConstraints = false
@@ -106,10 +108,10 @@ class BottomSheetViewController: UIViewController {
     
     // 바텀 시트 표출 애니메이션
     private func showBottomSheet() {
-        //        let safeAreaHeight: CGFloat = view.safeAreaLayoutGuide.layoutFrame.height
-        //        let bottomPadding: CGFloat = view.safeAreaInsets.bottom
-        //
-        //        bottomSheetViewTopConstraint.constant = (safeAreaHeight + bottomPadding) - bottomHeight
+        let safeAreaHeight: CGFloat = view.safeAreaLayoutGuide.layoutFrame.height
+        let bottomPadding: CGFloat = view.safeAreaInsets.bottom
+        
+        bottomSheetViewTopConstraint.constant = (safeAreaHeight + bottomPadding) - bottomHeight
         
         UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseIn, animations: {
             self.dimmedBackView.alpha = 0.5
@@ -119,9 +121,9 @@ class BottomSheetViewController: UIViewController {
     
     // 바텀 시트 사라지는 애니메이션
     private func hideBottomSheetAndGoBack() {
-        //        let safeAreaHeight = view.safeAreaLayoutGuide.layoutFrame.height
-        //        let bottomPadding = view.safeAreaInsets.bottom
-        //        bottomSheetViewTopConstraint.constant = safeAreaHeight + bottomPadding
+        let safeAreaHeight = view.safeAreaLayoutGuide.layoutFrame.height
+        let bottomPadding = view.safeAreaInsets.bottom
+        bottomSheetViewTopConstraint.constant = safeAreaHeight + bottomPadding
         UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseIn, animations: {
             self.dimmedBackView.alpha = 0.0
             self.view.layoutIfNeeded()
