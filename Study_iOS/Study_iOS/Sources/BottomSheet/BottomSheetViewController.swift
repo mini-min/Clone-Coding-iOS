@@ -51,10 +51,7 @@ class BottomSheetViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        
-        let dimmedTap = UITapGestureRecognizer(target: self, action: #selector(dimmedViewTapped(_:)))
-        dimmedBackView.addGestureRecognizer(dimmedTap)
-        dimmedBackView.isUserInteractionEnabled = true
+        setupGestureRecognizer()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -74,6 +71,19 @@ class BottomSheetViewController: UIViewController {
         
         dimmedBackView.alpha = 0.0
         setupLayout()
+    }
+    
+    // GestureRecognizer 세팅 작업
+    private func setupGestureRecognizer() {
+        // 흐린 부분 탭할 때, 바텀시트를 내리는 TapGesture
+        let dimmedTap = UITapGestureRecognizer(target: self, action: #selector(dimmedViewTapped(_:)))
+        dimmedBackView.addGestureRecognizer(dimmedTap)
+        dimmedBackView.isUserInteractionEnabled = true
+        
+        // 스와이프 했을 때, 바텀시트를 내리는 swipeGesture
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(panGesture))
+        swipeGesture.direction = .down
+        view.addGestureRecognizer(swipeGesture)
     }
     
     // 레이아웃 세팅
@@ -134,8 +144,21 @@ class BottomSheetViewController: UIViewController {
         }
     }
     
+    // UITapGestureRecognizer 연결 함수 부분
     @objc private func dimmedViewTapped(_ tapRecognizer: UITapGestureRecognizer) {
         hideBottomSheetAndGoBack()
+    }
+    
+    // UISwipeGestureRecognizer 연결 함수 부분
+    @objc func panGesture(_ recognizer: UISwipeGestureRecognizer) {
+        if recognizer.state == .ended {
+            switch recognizer.direction {
+            case .down:
+                hideBottomSheetAndGoBack()
+            default:
+                break
+            }
+        }
     }
 }
 
