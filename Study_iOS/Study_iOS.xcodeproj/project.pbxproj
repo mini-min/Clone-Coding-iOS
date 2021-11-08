@@ -15,9 +15,10 @@
 		3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3930C0AB26F44277009B424C /* SignInStoryboard.storyboard */; };
 		3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930C0AE26F444D2009B424C /* UIView+Extension.swift */; };
 		3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3930C0B026F46A90009B424C /* CALayer+Extension.swift */; };
+		394097062738F380006D112C /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394097052738F380006D112C /* BottomSheetViewController.swift */; };
+		3940970A2738F399006D112C /* BottomSheetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394097092738F399006D112C /* BottomSheetStoryboard.storyboard */; };
 		39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */; };
 		394F315227082B7200C83291 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 394F315127082B7200C83291 /* .swiftlint.yml */; };
-		3950010E271582ED00B35B4E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3950010D271582ED00B35B4E /* Friend.swift */; };
 		39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D8D26F708D4001B89D9 /* HomeViewController.swift */; };
 		39516D9026F708DB001B89D9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D8F26F708DB001B89D9 /* SearchViewController.swift */; };
 		39516D9226F708FC001B89D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516D9126F708FC001B89D9 /* FriendsViewController.swift */; };
@@ -58,9 +59,10 @@
 		3930C0AB26F44277009B424C /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		3930C0AE26F444D2009B424C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3930C0B026F46A90009B424C /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		394097052738F380006D112C /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		394097092738F399006D112C /* BottomSheetStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomSheetStoryboard.storyboard; sourceTree = "<group>"; };
 		39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		394F315127082B7200C83291 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		3950010D271582ED00B35B4E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		39516D8D26F708D4001B89D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		39516D8F26F708DB001B89D9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		39516D9126F708FC001B89D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,15 @@
 				39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		394097042738F340006D112C /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				394097052738F380006D112C /* BottomSheetViewController.swift */,
+				394097092738F399006D112C /* BottomSheetStoryboard.storyboard */,
+			);
+			path = BottomSheet;
 			sourceTree = "<group>";
 		};
 		39516D8626F70756001B89D9 /* Base */ = {
@@ -266,12 +277,12 @@
 		3983DF6F26F3670500539090 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				394097042738F340006D112C /* BottomSheet */,
 				3983C77A2716E414004E4790 /* CardSwiper */,
 				39516DA526F70CBA001B89D9 /* SignUp */,
 				39516DA626F70CC5001B89D9 /* SignIn */,
 				392A1C9626FD846300BCD71A /* Test */,
 				39516D8626F70756001B89D9 /* Base */,
-				3950010D271582ED00B35B4E /* Friend.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -406,6 +417,7 @@
 				3983C77E2716E44D004E4790 /* CardSwiperStoryboard.storyboard in Resources */,
 				39516DA426F70B46001B89D9 /* BaseStoryboard.storyboard in Resources */,
 				3983DF8226F36C3700539090 /* Colors.xcassets in Resources */,
+				3940970A2738F399006D112C /* BottomSheetStoryboard.storyboard in Resources */,
 				39B5FC3D2700A98300486022 /* AddSizeStoryboard.storyboard in Resources */,
 				392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */,
 				3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */,
@@ -481,13 +493,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3930C0AA26F44271009B424C /* SignInViewController.swift in Sources */,
+				394097062738F380006D112C /* BottomSheetViewController.swift in Sources */,
 				39516D9426F7091A001B89D9 /* SizeViewController.swift in Sources */,
 				39516D9226F708FC001B89D9 /* FriendsViewController.swift in Sources */,
 				3983DF4026F3662A00539090 /* AppDelegate.swift in Sources */,
 				397A575926FEC68900AFCE59 /* QuestionListDataModel.swift in Sources */,
 				39516D9026F708DB001B89D9 /* SearchViewController.swift in Sources */,
 				392A1C9826FD850300BCD71A /* TestViewController.swift in Sources */,
-				3950010E271582ED00B35B4E /* Friend.swift in Sources */,
 				39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */,
 				39D530DE26FD9BAC00AD2F64 /* TestResultViewController.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
