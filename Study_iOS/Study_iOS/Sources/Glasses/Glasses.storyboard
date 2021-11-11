@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Glasses View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GlassesViewController" id="Y6W-OH-hqX" customClass="GlassesViewController" customModule="Study_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="NeG-IZ-0so">
+                                <rect key="frame" x="18" y="701" width="339" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAy-kp-BDy">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="52"/>
+                                        <color key="backgroundColor" red="0.9137254901960784" green="0.92549019607843142" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="tintColor" red="0.36862745098039218" green="0.396078431372549" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="촬영"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGK-Ts-pAp">
+                                        <rect key="frame" x="173" y="0.0" width="166" height="52"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.43921568630000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="안경 선택"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="QE6-Qh-95R"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mXw-YL-4gO">
+                                <rect key="frame" x="0.0" y="609" width="375" height="67"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="bZV-t1-lMr"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N0I-Fz-ewV">
+                                    <size key="itemSize" width="123" height="64"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7e9-zc-9dW">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Ng-EB-N4S">
+                                            <rect key="frame" x="0.0" y="0.0" width="123" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="123" height="64"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YeK-bT-VwQ">
+                                <rect key="frame" x="5" y="44" width="365" height="548"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NeG-IZ-0so" secondAttribute="bottom" constant="25" id="CbL-pn-zPA"/>
+                            <constraint firstItem="NeG-IZ-0so" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="Eaa-9K-nUS"/>
+                            <constraint firstItem="YeK-bT-VwQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Jxs-AY-deJ"/>
+                            <constraint firstItem="mXw-YL-4gO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="L9o-es-2bt"/>
+                            <constraint firstItem="NeG-IZ-0so" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="OHA-Fc-c9p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YeK-bT-VwQ" secondAttribute="trailing" constant="5" id="P3v-te-aI5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mXw-YL-4gO" secondAttribute="trailing" id="eWO-JQ-pNG"/>
+                            <constraint firstItem="YeK-bT-VwQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="jpD-Lp-6nP"/>
+                            <constraint firstItem="NeG-IZ-0so" firstAttribute="top" secondItem="mXw-YL-4gO" secondAttribute="bottom" constant="25" id="loi-yX-u98"/>
+                            <constraint firstItem="mXw-YL-4gO" firstAttribute="top" secondItem="YeK-bT-VwQ" secondAttribute="bottom" constant="17" id="yyQ-78-FWX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="faceImageView" destination="YeK-bT-VwQ" id="BSy-7K-OcV"/>
+                        <outlet property="glasseseCollectionView" destination="mXw-YL-4gO" id="4LA-VK-paN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="36.945812807881772"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person" width="1170" height="1574"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

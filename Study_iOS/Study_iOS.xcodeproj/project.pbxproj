@@ -31,6 +31,10 @@
 		39516D9E26F70950001B89D9 /* SizeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516D9D26F70950001B89D9 /* SizeStoryboard.storyboard */; };
 		39516DA426F70B46001B89D9 /* BaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516DA326F70B46001B89D9 /* BaseStoryboard.storyboard */; };
 		39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516DA726F70D74001B89D9 /* BaseViewController.swift */; };
+		39584579273D0727009CC6B9 /* GlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39584578273D0727009CC6B9 /* GlassesViewController.swift */; };
+		3958457B273D0730009CC6B9 /* Glasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3958457A273D0730009CC6B9 /* Glasses.storyboard */; };
+		3958457E273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958457C273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift */; };
+		3958457F273D4E04009CC6B9 /* BackgroundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3958457D273D4E04009CC6B9 /* BackgroundCollectionViewCell.xib */; };
 		397A575926FEC68900AFCE59 /* QuestionListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A575826FEC68900AFCE59 /* QuestionListDataModel.swift */; };
 		3983C77C2716E438004E4790 /* CardSwiperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C77B2716E438004E4790 /* CardSwiperViewController.swift */; };
 		3983C77E2716E44D004E4790 /* CardSwiperStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983C77D2716E44D004E4790 /* CardSwiperStoryboard.storyboard */; };
@@ -77,6 +81,10 @@
 		39516D9D26F70950001B89D9 /* SizeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SizeStoryboard.storyboard; sourceTree = "<group>"; };
 		39516DA326F70B46001B89D9 /* BaseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseStoryboard.storyboard; sourceTree = "<group>"; };
 		39516DA726F70D74001B89D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		39584578273D0727009CC6B9 /* GlassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesViewController.swift; sourceTree = "<group>"; };
+		3958457A273D0730009CC6B9 /* Glasses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Glasses.storyboard; sourceTree = "<group>"; };
+		3958457C273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCollectionViewCell.swift; sourceTree = "<group>"; };
+		3958457D273D4E04009CC6B9 /* BackgroundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundCollectionViewCell.xib; sourceTree = "<group>"; };
 		397A575826FEC68900AFCE59 /* QuestionListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListDataModel.swift; sourceTree = "<group>"; };
 		3983C77B2716E438004E4790 /* CardSwiperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwiperViewController.swift; sourceTree = "<group>"; };
 		3983C77D2716E44D004E4790 /* CardSwiperStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardSwiperStoryboard.storyboard; sourceTree = "<group>"; };
@@ -238,6 +246,17 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
+		39584577273D06E8009CC6B9 /* Glasses */ = {
+			isa = PBXGroup;
+			children = (
+				39584578273D0727009CC6B9 /* GlassesViewController.swift */,
+				3958457A273D0730009CC6B9 /* Glasses.storyboard */,
+				3958457C273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift */,
+				3958457D273D4E04009CC6B9 /* BackgroundCollectionViewCell.xib */,
+			);
+			path = Glasses;
+			sourceTree = "<group>";
+		};
 		3983C77A2716E414004E4790 /* CardSwiper */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +302,7 @@
 		3983DF6F26F3670500539090 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				39584577273D06E8009CC6B9 /* Glasses */,
 				394097042738F340006D112C /* BottomSheet */,
 				3983C77A2716E414004E4790 /* CardSwiper */,
 				39516DA526F70CBA001B89D9 /* SignUp */,
@@ -417,6 +437,7 @@
 				3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */,
 				3983C7842716E490004E4790 /* FrontCardViewCell.xib in Resources */,
 				3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */,
+				3958457B273D0730009CC6B9 /* Glasses.storyboard in Resources */,
 				39D530E026FD9BB500AD2F64 /* TestResultStoryboard.storyboard in Resources */,
 				39516D9826F70930001B89D9 /* HomeStoryboard.storyboard in Resources */,
 				3983DF7B26F36A5800539090 /* Assets.xcassets in Resources */,
@@ -426,6 +447,7 @@
 				39B5FC3D2700A98300486022 /* AddSizeStoryboard.storyboard in Resources */,
 				392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */,
 				3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */,
+				3958457F273D4E04009CC6B9 /* BackgroundCollectionViewCell.xib in Resources */,
 				3983C7882716E4A0004E4790 /* BackCardViewCell.xib in Resources */,
 				3940971027394DA8006D112C /* TestBottomSheetStoryboard.storyboard in Resources */,
 				39516D9C26F7094A001B89D9 /* FriendsStoryboard.storyboard in Resources */,
@@ -501,6 +523,7 @@
 				3930C0AA26F44271009B424C /* SignInViewController.swift in Sources */,
 				394097062738F380006D112C /* BottomSheetViewController.swift in Sources */,
 				39516D9426F7091A001B89D9 /* SizeViewController.swift in Sources */,
+				39584579273D0727009CC6B9 /* GlassesViewController.swift in Sources */,
 				39516D9226F708FC001B89D9 /* FriendsViewController.swift in Sources */,
 				3940970E27394D9E006D112C /* TestBottomSheetViewController.swift in Sources */,
 				3940971227394F7C006D112C /* Test.swift in Sources */,
@@ -519,6 +542,7 @@
 				39B5FC3B2700A97400486022 /* AddSizeViewController.swift in Sources */,
 				3983C7832716E490004E4790 /* FrontCardViewCell.swift in Sources */,
 				3983C77C2716E438004E4790 /* CardSwiperViewController.swift in Sources */,
+				3958457E273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift in Sources */,
 				39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */,
 				39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */,
 				3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */,
