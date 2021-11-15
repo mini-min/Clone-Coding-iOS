@@ -10,7 +10,7 @@ import UIKit
 class GroupChoiceBottomSheetViewController: CommonBottomSheetViewController {
     
     // MARK: - Properties
-    var pickerList = ["미분류", "수진", "동아리", "학교", "방구", "꼬순"]
+    var pickerList = ["가가가가", "나나나나", "다다다다", "라라라라", "마마마마", "바바바바", "사사사사"]
     var selectedRow: Int {
         return groupPickerView.selectedRow(inComponent: 0)
     }

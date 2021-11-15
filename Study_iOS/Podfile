@@ -9,5 +9,6 @@ target 'Study_iOS' do
 pod 'KakaoSDKUser'
 pod 'SwiftLint'
 pod 'VerticalCardSwiper'
+pod 'SnapKit'
 
 end
