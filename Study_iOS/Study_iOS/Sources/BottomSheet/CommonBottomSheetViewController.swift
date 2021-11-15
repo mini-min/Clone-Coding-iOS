@@ -7,8 +7,19 @@
 
 import UIKit
 
-class CommonBottomSheetViewController: UIViewController {
+/* Example
+ 1) CommonBottomSheetViewController에는 공통으로 필요한 요소들만 구현해둔 상태
+ 2) CommonBottomSheetViewController를 상속받은 뷰컨 생성 (예시: InheritanceViewController)
+ 3) InheritanceViewController에 텍스트 필드, 피커 뷰, 버튼 등 각 화면에 맞는 추가 기능 구현
+ 4) 아래 코드 방식으로 present
+ 
+    InheritanceViewController()
+                    .setHeight(475)
+                    .setTitle("그룹 선택")
+*/
 
+class CommonBottomSheetViewController: UIViewController {
+    
     // MARK: - Properties
     // 바텀 시트 높이
     var bottomHeight: CGFloat = 475
@@ -52,7 +63,7 @@ class CommonBottomSheetViewController: UIViewController {
         
         return label
     }()
-
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +77,7 @@ class CommonBottomSheetViewController: UIViewController {
         
         showBottomSheet()
     }
-     
+    
     // MARK: - @Functions
     // UI 세팅 작업
     private func setupUI() {
@@ -119,7 +130,7 @@ class CommonBottomSheetViewController: UIViewController {
             dismissIndicatorView.topAnchor.constraint(equalTo: bottomSheetView.topAnchor, constant: 12),
             dismissIndicatorView.centerXAnchor.constraint(equalTo: bottomSheetView.centerXAnchor)
         ])
-       
+        
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: dismissIndicatorView.bottomAnchor, constant: 28),
@@ -142,7 +153,7 @@ class CommonBottomSheetViewController: UIViewController {
     }
     
     // 바텀 시트 사라지는 애니메이션
-    private func hideBottomSheetAndGoBack() {
+    func hideBottomSheetAndGoBack() {
         let safeAreaHeight = view.safeAreaLayoutGuide.layoutFrame.height
         let bottomPadding = view.safeAreaInsets.bottom
         bottomSheetViewTopConstraint.constant = safeAreaHeight + bottomPadding
