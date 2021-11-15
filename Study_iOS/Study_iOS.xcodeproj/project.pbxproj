@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3919A57027420CD400D4E6EC /* BottomSheetTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919A56F27420CD400D4E6EC /* BottomSheetTextFieldViewController.swift */; };
+		3919A57227421D2500D4E6EC /* UISettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919A57127421D2500D4E6EC /* UISettingViewController.swift */; };
+		3919A57427421DF000D4E6EC /* CommonBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919A57327421DF000D4E6EC /* CommonBottomSheetViewController.swift */; };
 		392A1C9826FD850300BCD71A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1C9726FD850300BCD71A /* TestViewController.swift */; };
 		392A1C9A26FD850C00BCD71A /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */; };
 		392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */; };
@@ -62,6 +65,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3919A56F27420CD400D4E6EC /* BottomSheetTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTextFieldViewController.swift; sourceTree = "<group>"; };
+		3919A57127421D2500D4E6EC /* UISettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingViewController.swift; sourceTree = "<group>"; };
+		3919A57327421DF000D4E6EC /* CommonBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBottomSheetViewController.swift; sourceTree = "<group>"; };
 		392A1C9726FD850300BCD71A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		392A1C9926FD850C00BCD71A /* TestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		392A1CA326FD915B00BCD71A /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
@@ -181,9 +187,12 @@
 			isa = PBXGroup;
 			children = (
 				394097052738F380006D112C /* BottomSheetViewController.swift */,
+				3919A56F27420CD400D4E6EC /* BottomSheetTextFieldViewController.swift */,
+				3919A57327421DF000D4E6EC /* CommonBottomSheetViewController.swift */,
 				3940970D27394D9E006D112C /* TestBottomSheetViewController.swift */,
 				3940970F27394DA8006D112C /* TestBottomSheetStoryboard.storyboard */,
 				3940971127394F7C006D112C /* Test.swift */,
+				3919A57127421D2500D4E6EC /* UISettingViewController.swift */,
 			);
 			path = BottomSheet;
 			sourceTree = "<group>";
@@ -566,13 +575,16 @@
 				392A1CA426FD915B00BCD71A /* AnswerTableViewCell.swift in Sources */,
 				3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */,
 				3983DF4226F3662A00539090 /* SceneDelegate.swift in Sources */,
+				3919A57227421D2500D4E6EC /* UISettingViewController.swift in Sources */,
 				3983C7872716E4A0004E4790 /* BackCardViewCell.swift in Sources */,
 				39B5FC3B2700A97400486022 /* AddSizeViewController.swift in Sources */,
+				3919A57027420CD400D4E6EC /* BottomSheetTextFieldViewController.swift in Sources */,
 				3983C7832716E490004E4790 /* FrontCardViewCell.swift in Sources */,
 				3983C77C2716E438004E4790 /* CardSwiperViewController.swift in Sources */,
 				3958457E273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift in Sources */,
 				39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */,
 				39516D8E26F708D4001B89D9 /* HomeViewController.swift in Sources */,
+				3919A57427421DF000D4E6EC /* CommonBottomSheetViewController.swift in Sources */,
 				3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,8 +31,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpButtonClicked(_ sender: Any) {
-        let pushVC = UIStoryboard(name: Const.Storyboard.Name.signUp, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.signUpViewController)
-        self.navigationController?.pushViewController(pushVC, animated: true)
+//        let pushVC = UIStoryboard(name: Const.Storyboard.Name.signUp, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.signUpViewController)
+//        self.navigationController?.pushViewController(pushVC, animated: true)
     }
     
     @IBAction func tapView(_ sender: UITapGestureRecognizer) {
@@ -45,9 +45,9 @@ class LoginViewController: UIViewController {
             case .success(let message):
                 if let message = message as? String {
                     self.makeAlert(title: "알림", message: message, okAction: { _ in
-                        let nextVC = UIStoryboard(name: Const.Storyboard.Name.tabBar, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.tabBarViewController)
-                        nextVC.modalPresentationStyle = .overFullScreen
-                        self.present(nextVC, animated: true, completion: nil)
+//                        let nextVC = UIStoryboard(name: Const.Storyboard.Name.tabBar, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.tabBarViewController)
+//                        nextVC.modalPresentationStyle = .overFullScreen
+//                        self.present(nextVC, animated: true, completion: nil)
                     })
                 }
             case .requestErr(let message):
