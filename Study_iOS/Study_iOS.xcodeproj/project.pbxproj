@@ -34,7 +34,6 @@
 		39516DA426F70B46001B89D9 /* BaseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39516DA326F70B46001B89D9 /* BaseStoryboard.storyboard */; };
 		39516DA826F70D74001B89D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39516DA726F70D74001B89D9 /* BaseViewController.swift */; };
 		39543C8C274285E000EAB7FA /* ExampleSnapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39543C8B274285E000EAB7FA /* ExampleSnapkitViewController.swift */; };
-		39543C8E274285E900EAB7FA /* ExampleSnapKitStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39543C8D274285E900EAB7FA /* ExampleSnapKitStoryboard.storyboard */; };
 		39584579273D0727009CC6B9 /* GlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39584578273D0727009CC6B9 /* GlassesViewController.swift */; };
 		3958457B273D0730009CC6B9 /* Glasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3958457A273D0730009CC6B9 /* Glasses.storyboard */; };
 		3958457E273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958457C273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift */; };
@@ -93,7 +92,6 @@
 		39516DA326F70B46001B89D9 /* BaseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseStoryboard.storyboard; sourceTree = "<group>"; };
 		39516DA726F70D74001B89D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		39543C8B274285E000EAB7FA /* ExampleSnapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSnapkitViewController.swift; sourceTree = "<group>"; };
-		39543C8D274285E900EAB7FA /* ExampleSnapKitStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleSnapKitStoryboard.storyboard; sourceTree = "<group>"; };
 		39584578273D0727009CC6B9 /* GlassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesViewController.swift; sourceTree = "<group>"; };
 		3958457A273D0730009CC6B9 /* Glasses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Glasses.storyboard; sourceTree = "<group>"; };
 		3958457C273D4E04009CC6B9 /* BackgroundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -270,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				39543C8B274285E000EAB7FA /* ExampleSnapkitViewController.swift */,
-				39543C8D274285E900EAB7FA /* ExampleSnapKitStoryboard.storyboard */,
 			);
 			path = SnapKit;
 			sourceTree = "<group>";
@@ -477,7 +474,6 @@
 				394F315227082B7200C83291 /* .swiftlint.yml in Resources */,
 				39516D9A26F7093D001B89D9 /* SearchStoryboard.storyboard in Resources */,
 				39516D9E26F70950001B89D9 /* SizeStoryboard.storyboard in Resources */,
-				39543C8E274285E900EAB7FA /* ExampleSnapKitStoryboard.storyboard in Resources */,
 				3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */,
 				3983C7842716E490004E4790 /* FrontCardViewCell.xib in Resources */,
 				3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */,
