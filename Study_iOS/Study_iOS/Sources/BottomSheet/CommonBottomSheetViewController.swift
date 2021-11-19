@@ -7,15 +7,15 @@
 
 import UIKit
 
-/* Example
+/**
+ 공통으로 사용할 수 있도록 만들어둔 바텀 시트입니다.
+ 
  1) CommonBottomSheetViewController에는 공통으로 필요한 요소들만 구현해둔 상태
  2) CommonBottomSheetViewController를 상속받은 뷰컨 생성 (예시: InheritanceViewController)
  3) InheritanceViewController에 텍스트 필드, 피커 뷰, 버튼 등 각 화면에 맞는 추가 기능 구현
- 4) 아래 코드 방식으로 present
- 
-    InheritanceViewController()
-                    .setHeight(475)
-                    .setTitle("그룹 선택")
+ 4) .setHeight 메서드 파라미터로 높이값을 조정 (default값은 475)
+ 5) .setTitle 메서드 파라미터로 가장 상단 타이틀 라벨에 들어갈 내용 입력 (String)
+ 6) present 방식으로 화면에 표출
 */
 
 class CommonBottomSheetViewController: UIViewController {
@@ -35,7 +35,19 @@ class CommonBottomSheetViewController: UIViewController {
     }()
     
     // 바텀 시트 뷰
-    private let bottomSheetView: UIView = {
+    let bottomSheetView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        
+        view.layer.cornerRadius = 27
+        view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        view.clipsToBounds = true
+        
+        return view
+    }()
+    
+    // 자연스러운 애니메이션을 위한..커버..
+    let bottomSheetCoverView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         
@@ -85,6 +97,7 @@ class CommonBottomSheetViewController: UIViewController {
         view.addSubview(bottomSheetView)
         view.addSubview(dismissIndicatorView)
         view.addSubview(titleLabel)
+        view.addSubview(bottomSheetCoverView)
         
         dimmedBackView.alpha = 0.0
         setupLayout()
@@ -123,6 +136,14 @@ class CommonBottomSheetViewController: UIViewController {
             bottomSheetViewTopConstraint
         ])
         
+        bottomSheetCoverView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            bottomSheetCoverView.topAnchor.constraint(equalTo: bottomSheetView.topAnchor),
+            bottomSheetCoverView.leadingAnchor.constraint(equalTo: bottomSheetView.leadingAnchor),
+            bottomSheetCoverView.trailingAnchor.constraint(equalTo: bottomSheetView.trailingAnchor),
+            bottomSheetCoverView.bottomAnchor.constraint(equalTo: bottomSheetView.bottomAnchor)
+        ])
+        
         dismissIndicatorView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             dismissIndicatorView.widthAnchor.constraint(equalToConstant: 102),
@@ -146,10 +167,12 @@ class CommonBottomSheetViewController: UIViewController {
         
         bottomSheetViewTopConstraint.constant = (safeAreaHeight + bottomPadding) - bottomHeight
         
-        UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut, animations: {
             self.dimmedBackView.alpha = 0.5
             self.view.layoutIfNeeded()
-        }, completion: nil)
+        }, completion: { _ in
+            self.bottomSheetCoverView.isHidden = true
+        })
     }
     
     // 바텀 시트 사라지는 애니메이션
@@ -157,9 +180,10 @@ class CommonBottomSheetViewController: UIViewController {
         let safeAreaHeight = view.safeAreaLayoutGuide.layoutFrame.height
         let bottomPadding = view.safeAreaInsets.bottom
         bottomSheetViewTopConstraint.constant = safeAreaHeight + bottomPadding
-        UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut, animations: {
             self.dimmedBackView.alpha = 0.0
             self.view.layoutIfNeeded()
+            self.bottomSheetCoverView.isHidden = false
         }) { _ in
             if self.presentingViewController != nil {
                 self.dismiss(animated: false, completion: nil)

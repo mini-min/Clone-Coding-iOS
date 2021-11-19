@@ -44,8 +44,8 @@ class GroupChoiceBottomSheetViewController: CommonBottomSheetViewController {
     // MARK: - @Functions
     // UI 세팅 작업
     private func setupUI() {
-        view.addSubview(completeButton)
-        view.addSubview(groupPickerView)
+        bottomSheetView.addSubview(completeButton)
+        bottomSheetView.addSubview(groupPickerView)
         
         setupLayout()
     }

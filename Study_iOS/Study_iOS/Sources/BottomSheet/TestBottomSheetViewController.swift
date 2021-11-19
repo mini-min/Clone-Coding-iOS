@@ -16,10 +16,12 @@ class TestBottomSheetViewController: UIViewController {
     }
     
     @IBAction func bottomSheetButtonClicked(_ sender: Any) {
-        let bottomSheetVC = GroupChoiceBottomSheetViewController()
+         let bottomSheetVC = GroupChoiceBottomSheetViewController()
                                 .setHeight(406)
                                 .setTitle("그룹 선택")
-            
+//        let bottomSheetVC = CommonBottomSheetViewController()
+//                            .setHeight(406)
+//                            .setTitle("그룹 선택")
         bottomSheetVC.modalPresentationStyle = .overFullScreen
         self.present(bottomSheetVC, animated: false, completion: nil)
     }
