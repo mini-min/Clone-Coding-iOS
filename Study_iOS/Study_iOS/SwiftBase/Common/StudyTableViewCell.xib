@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,24 +23,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-J2-okM">
-                        <rect key="frame" x="236" y="10" width="60" height="24"/>
-                        <color key="backgroundColor" name="Gray2"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="60" id="1WK-jw-hmf"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" title="실행하기">
-                            <color key="titleColor" name="SpoTBlue"/>
-                        </state>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ePg-J2-okM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Afw-7j-pLH"/>
-                    <constraint firstAttribute="trailing" secondItem="ePg-J2-okM" secondAttribute="trailing" constant="24" id="Tn0-eu-2so"/>
                     <constraint firstItem="S8j-02-oCV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="kfI-Cz-nDY"/>
-                    <constraint firstItem="ePg-J2-okM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m8g-Pi-hDI"/>
                     <constraint firstItem="S8j-02-oCV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="psW-FJ-bUZ"/>
                 </constraints>
             </tableViewCellContentView>
@@ -52,12 +36,4 @@
             <point key="canvasLocation" x="131.8840579710145" y="43.526785714285715"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <namedColor name="Gray2">
-            <color red="0.9137254901960784" green="0.92156862745098034" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="SpoTBlue">
-            <color red="0.0039215686274509803" green="0.15686274509803921" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>

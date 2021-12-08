@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		39053B262753C5FB0072F1BC /* DarkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39053B252753C5FB0072F1BC /* DarkModeViewController.swift */; };
 		39053B282753C6170072F1BC /* DarkMode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39053B272753C6170072F1BC /* DarkMode.storyboard */; };
+		3911B715276097AF00D4B80B /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3911B714276097AF00D4B80B /* ImageView.storyboard */; };
+		3911B717276097CA00D4B80B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3911B716276097CA00D4B80B /* ImageViewController.swift */; };
 		3919A57027420CD400D4E6EC /* BottomSheetTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919A56F27420CD400D4E6EC /* BottomSheetTextFieldViewController.swift */; };
 		3919A57427421DF000D4E6EC /* CommonBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919A57327421DF000D4E6EC /* CommonBottomSheetViewController.swift */; };
 		3919A57827423A2400D4E6EC /* GroupChoiceBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919A57727423A2400D4E6EC /* GroupChoiceBottomSheetViewController.swift */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		39053B252753C5FB0072F1BC /* DarkModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewController.swift; sourceTree = "<group>"; };
 		39053B272753C6170072F1BC /* DarkMode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DarkMode.storyboard; sourceTree = "<group>"; };
+		3911B714276097AF00D4B80B /* ImageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageView.storyboard; sourceTree = "<group>"; };
+		3911B716276097CA00D4B80B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		3919A56F27420CD400D4E6EC /* BottomSheetTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTextFieldViewController.swift; sourceTree = "<group>"; };
 		3919A57327421DF000D4E6EC /* CommonBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBottomSheetViewController.swift; sourceTree = "<group>"; };
 		3919A57727423A2400D4E6EC /* GroupChoiceBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChoiceBottomSheetViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +285,7 @@
 		39DCD80D27604D6000D8F73E /* SwiftBase */ = {
 			isa = PBXGroup;
 			children = (
+				39DCD818276080D200D8F73E /* ImageView */,
 				39DCD81227604E3400D8F73E /* Common */,
 			);
 			path = SwiftBase;
@@ -295,6 +300,15 @@
 				39DCD81427604F9B00D8F73E /* StudyTableViewCell.xib */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		39DCD818276080D200D8F73E /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3911B716276097CA00D4B80B /* ImageViewController.swift */,
+				3911B714276097AF00D4B80B /* ImageView.storyboard */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 		570CE84094E50409753549F8 /* Frameworks */ = {
@@ -377,6 +391,7 @@
 				3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */,
 				39053B282753C6170072F1BC /* DarkMode.storyboard in Resources */,
 				3983C7882716E4A0004E4790 /* BackCardViewCell.xib in Resources */,
+				3911B715276097AF00D4B80B /* ImageView.storyboard in Resources */,
 				3940971027394DA8006D112C /* TestBottomSheetStoryboard.storyboard in Resources */,
 				39BB924C2755DD3C00B5D424 /* ExampleTableViewCell.xib in Resources */,
 			);
@@ -458,6 +473,7 @@
 				39DCD80F27604DB400D8F73E /* CommonViewController.swift in Sources */,
 				39543C8C274285E000EAB7FA /* ExampleSnapkitViewController.swift in Sources */,
 				39BB924B2755DD3C00B5D424 /* ExampleTableViewCell.swift in Sources */,
+				3911B717276097CA00D4B80B /* ImageViewController.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
 				3930C0AF26F444D2009B424C /* UIView+Extension.swift in Sources */,
 				39DCD80627604BC200D8F73E /* Storyboard.swift in Sources */,

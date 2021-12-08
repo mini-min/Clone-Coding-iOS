@@ -10,6 +10,7 @@ import UIKit
 class CommonViewController: UIViewController {
 
     // MARK: - Properties
+    var studyList = ["1. 이미지 뷰(ImageView)"]
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var studyTableView: UITableView!
@@ -20,23 +21,40 @@ class CommonViewController: UIViewController {
         
         setUI()
     }
-    
-    // MARK: - @IBAction Properties
-    
 }
 
 // MARK: - Extensions
 extension CommonViewController {
+    
     func setUI() {
         studyTableView.register(StudyTableViewCell.nib(), forCellReuseIdentifier: Const.Xib.studyTableViewCell)
         
         studyTableView.delegate = self
         studyTableView.dataSource = self
     }
+    
+    func presentToNextView(sb: String, vc: String) {
+        let nextVC = UIStoryboard(name: sb, bundle: nil).instantiateViewController(withIdentifier: vc)
+        nextVC.modalPresentationStyle = .overFullScreen
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
 }
 
 // MARK: - TableView Delegate
 extension CommonViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let cell = tableView.cellForRow(at: indexPath)
+        cell!.contentView.backgroundColor = .white
+        
+        switch indexPath.row {
+        case 0: presentToNextView(sb: Const.Storyboard.Name.imageView,
+                                  vc: Const.ViewController.Identifier.imageViewController)
+        default: print("default!")
+        }
+    }
     
 }
 
@@ -44,13 +62,15 @@ extension CommonViewController: UITableViewDelegate {
 extension CommonViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return studyList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let serviceCell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.studyTableViewCell, for: indexPath) as? StudyTableViewCell else { return UITableViewCell() }
         
+        serviceCell.titleLabel.text = studyList[indexPath.row]
+        
         return serviceCell
     }
+    
 }
-

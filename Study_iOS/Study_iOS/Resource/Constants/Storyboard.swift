@@ -11,6 +11,7 @@ extension Const {
     struct Storyboard {
         struct Name {
             static let common = "Common"
+            static let imageView = "ImageView"
         }
     }
 }
