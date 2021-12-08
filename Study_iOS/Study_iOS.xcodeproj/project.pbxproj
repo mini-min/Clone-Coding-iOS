@@ -43,6 +43,10 @@
 		39DCD80827604BCD00D8F73E /* Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DCD80727604BCD00D8F73E /* Xib.swift */; };
 		39DCD80A27604BD800D8F73E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DCD80927604BD800D8F73E /* Notification.swift */; };
 		39DCD80C27604BE000D8F73E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DCD80B27604BE000D8F73E /* UserDefaults.swift */; };
+		39DCD80F27604DB400D8F73E /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DCD80E27604DB400D8F73E /* CommonViewController.swift */; };
+		39DCD81127604DBB00D8F73E /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DCD81027604DBB00D8F73E /* Common.storyboard */; };
+		39DCD81527604F9B00D8F73E /* StudyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DCD81327604F9B00D8F73E /* StudyTableViewCell.swift */; };
+		39DCD81627604F9B00D8F73E /* StudyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39DCD81427604F9B00D8F73E /* StudyTableViewCell.xib */; };
 		64A69447135C8945ECBBAFD2 /* Pods_Study_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +89,10 @@
 		39DCD80727604BCD00D8F73E /* Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xib.swift; sourceTree = "<group>"; };
 		39DCD80927604BD800D8F73E /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		39DCD80B27604BE000D8F73E /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		39DCD80E27604DB400D8F73E /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		39DCD81027604DBB00D8F73E /* Common.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Common.storyboard; sourceTree = "<group>"; };
+		39DCD81327604F9B00D8F73E /* StudyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewCell.swift; sourceTree = "<group>"; };
+		39DCD81427604F9B00D8F73E /* StudyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyTableViewCell.xib; sourceTree = "<group>"; };
 		65F7C6F7B423E90B69D20DA1 /* Pods_Study_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Study_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1CBDB0F3C1238E346FF930 /* Pods-Study_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study_iOS.release.xcconfig"; path = "Target Support Files/Pods-Study_iOS/Pods-Study_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E3F3EA9AFE9AA33D9DFE4D86 /* Pods-Study_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Study_iOS/Pods-Study_iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,13 +215,14 @@
 			isa = PBXGroup;
 			children = (
 				3983DF7126F3672300539090 /* Application */,
-				3983DF7726F3693D00539090 /* Resourcea */,
-				3983DF6F26F3670500539090 /* Sources */,
+				3983DF7726F3693D00539090 /* Resource */,
+				3983DF6F26F3670500539090 /* PracticeMyself */,
+				39DCD80D27604D6000D8F73E /* SwiftBase */,
 			);
 			path = Study_iOS;
 			sourceTree = "<group>";
 		};
-		3983DF6F26F3670500539090 /* Sources */ = {
+		3983DF6F26F3670500539090 /* PracticeMyself */ = {
 			isa = PBXGroup;
 			children = (
 				39053B222753C5CD0072F1BC /* DarkMode */,
@@ -223,7 +232,7 @@
 				39516DA526F70CBA001B89D9 /* SignUp */,
 				39516DA626F70CC5001B89D9 /* SignIn */,
 			);
-			path = Sources;
+			path = PracticeMyself;
 			sourceTree = "<group>";
 		};
 		3983DF7126F3672300539090 /* Application */ = {
@@ -237,14 +246,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		3983DF7726F3693D00539090 /* Resourcea */ = {
+		3983DF7726F3693D00539090 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				39DCD7FF27604B5200D8F73E /* Assets */,
 				39DCD7FE27604B4400D8F73E /* Constants */,
 				3930C0AD26F4449E009B424C /* Extensions */,
 			);
-			path = Resourcea;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		39DCD7FE27604B4400D8F73E /* Constants */ = {
@@ -267,6 +276,25 @@
 				3983DF8126F36C3700539090 /* Colors.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		39DCD80D27604D6000D8F73E /* SwiftBase */ = {
+			isa = PBXGroup;
+			children = (
+				39DCD81227604E3400D8F73E /* Common */,
+			);
+			path = SwiftBase;
+			sourceTree = "<group>";
+		};
+		39DCD81227604E3400D8F73E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				39DCD80E27604DB400D8F73E /* CommonViewController.swift */,
+				39DCD81027604DBB00D8F73E /* Common.storyboard */,
+				39DCD81327604F9B00D8F73E /* StudyTableViewCell.swift */,
+				39DCD81427604F9B00D8F73E /* StudyTableViewCell.xib */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		570CE84094E50409753549F8 /* Frameworks */ = {
@@ -337,8 +365,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DCD81127604DBB00D8F73E /* Common.storyboard in Resources */,
 				394F315227082B7200C83291 /* .swiftlint.yml in Resources */,
 				3930C0AC26F44277009B424C /* SignInStoryboard.storyboard in Resources */,
+				39DCD81627604F9B00D8F73E /* StudyTableViewCell.xib in Resources */,
 				3983C7842716E490004E4790 /* FrontCardViewCell.xib in Resources */,
 				3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */,
 				3983DF7B26F36A5800539090 /* Assets.xcassets in Resources */,
@@ -425,6 +455,7 @@
 				3919A57827423A2400D4E6EC /* GroupChoiceBottomSheetViewController.swift in Sources */,
 				3940970E27394D9E006D112C /* TestBottomSheetViewController.swift in Sources */,
 				3983DF4026F3662A00539090 /* AppDelegate.swift in Sources */,
+				39DCD80F27604DB400D8F73E /* CommonViewController.swift in Sources */,
 				39543C8C274285E000EAB7FA /* ExampleSnapkitViewController.swift in Sources */,
 				39BB924B2755DD3C00B5D424 /* ExampleTableViewCell.swift in Sources */,
 				3983DF8526F42D9E00539090 /* SignUpViewController.swift in Sources */,
@@ -440,6 +471,7 @@
 				3983C77C2716E438004E4790 /* CardSwiperViewController.swift in Sources */,
 				39DCD80C27604BE000D8F73E /* UserDefaults.swift in Sources */,
 				39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */,
+				39DCD81527604F9B00D8F73E /* StudyTableViewCell.swift in Sources */,
 				3919A57427421DF000D4E6EC /* CommonBottomSheetViewController.swift in Sources */,
 				3930C0B126F46A90009B424C /* CALayer+Extension.swift in Sources */,
 			);

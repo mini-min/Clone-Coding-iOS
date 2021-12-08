@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Storyboard.swift
 //  Study_iOS
 //
 //  Created by 민 on 2021/12/08.
@@ -8,9 +8,9 @@
 import Foundation
 
 extension Const {
-    struct ViewController {
-        
-        struct Identifier {
+    struct Storyboard {
+        struct Name {
+            static let common = "Common"
         }
     }
 }

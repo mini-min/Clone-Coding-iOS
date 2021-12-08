@@ -54,11 +54,11 @@ class SignUpViewController: UIViewController, UIGestureRecognizerDelegate, UIIma
 //            inputCheckPW.text?.isEmpty == false &&
 //            inputPW.text == inputCheckPW.text {
 
-            let testStortboard = UIStoryboard(name: "BaseStoryboard", bundle: nil)
-            if let nextVC = testStortboard.instantiateViewController(identifier: "BaseViewController") as? BaseViewController {
-                nextVC.modalPresentationStyle = .overFullScreen
-                self.present(nextVC, animated: true, completion: nil)
-            }
+//            let testStortboard = UIStoryboard(name: "BaseStoryboard", bundle: nil)
+//            if let nextVC = testStortboard.instantiateViewController(identifier: "BaseViewController") as? BaseViewController {
+//                nextVC.modalPresentationStyle = .overFullScreen
+//                self.present(nextVC, animated: true, completion: nil)
+//            }
 //        }
     }
 
