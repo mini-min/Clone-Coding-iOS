@@ -24,6 +24,8 @@
 		39488E332706D8BB00BDC917 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */; };
 		394F315227082B7200C83291 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 394F315127082B7200C83291 /* .swiftlint.yml */; };
 		39543C8C274285E000EAB7FA /* ExampleSnapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39543C8B274285E000EAB7FA /* ExampleSnapkitViewController.swift */; };
+		395FE2DE2761939500A9815E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395FE2DD2761939500A9815E /* DatePickerViewController.swift */; };
+		395FE2E02761939C00A9815E /* DatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395FE2DF2761939C00A9815E /* DatePicker.storyboard */; };
 		3983C77C2716E438004E4790 /* CardSwiperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C77B2716E438004E4790 /* CardSwiperViewController.swift */; };
 		3983C77E2716E44D004E4790 /* CardSwiperStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3983C77D2716E44D004E4790 /* CardSwiperStoryboard.storyboard */; };
 		3983C7832716E490004E4790 /* FrontCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3983C7812716E490004E4790 /* FrontCardViewCell.swift */; };
@@ -70,6 +72,8 @@
 		39488E322706D8BB00BDC917 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		394F315127082B7200C83291 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		39543C8B274285E000EAB7FA /* ExampleSnapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSnapkitViewController.swift; sourceTree = "<group>"; };
+		395FE2DD2761939500A9815E /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		395FE2DF2761939C00A9815E /* DatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePicker.storyboard; sourceTree = "<group>"; };
 		3983C77B2716E438004E4790 /* CardSwiperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwiperViewController.swift; sourceTree = "<group>"; };
 		3983C77D2716E44D004E4790 /* CardSwiperStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardSwiperStoryboard.storyboard; sourceTree = "<group>"; };
 		3983C7812716E490004E4790 /* FrontCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardViewCell.swift; sourceTree = "<group>"; };
@@ -183,6 +187,15 @@
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
+		395FE2DC2761938300A9815E /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				395FE2DD2761939500A9815E /* DatePickerViewController.swift */,
+				395FE2DF2761939C00A9815E /* DatePicker.storyboard */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 		3983C77A2716E414004E4790 /* CardSwiper */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +298,7 @@
 		39DCD80D27604D6000D8F73E /* SwiftBase */ = {
 			isa = PBXGroup;
 			children = (
+				395FE2DC2761938300A9815E /* DatePicker */,
 				39DCD818276080D200D8F73E /* ImageView */,
 				39DCD81227604E3400D8F73E /* Common */,
 			);
@@ -387,6 +401,7 @@
 				3983DF8726F42DAA00539090 /* SignUpStoryboard.storyboard in Resources */,
 				3983DF7B26F36A5800539090 /* Assets.xcassets in Resources */,
 				3983C77E2716E44D004E4790 /* CardSwiperStoryboard.storyboard in Resources */,
+				395FE2E02761939C00A9815E /* DatePicker.storyboard in Resources */,
 				3983DF8226F36C3700539090 /* Colors.xcassets in Resources */,
 				3983DF4C26F3662A00539090 /* LaunchScreen.storyboard in Resources */,
 				39053B282753C6170072F1BC /* DarkMode.storyboard in Resources */,
@@ -479,6 +494,7 @@
 				39DCD80627604BC200D8F73E /* Storyboard.swift in Sources */,
 				39DCD80827604BCD00D8F73E /* Xib.swift in Sources */,
 				39DCD80427604BA400D8F73E /* ViewController.swift in Sources */,
+				395FE2DE2761939500A9815E /* DatePickerViewController.swift in Sources */,
 				3983DF4226F3662A00539090 /* SceneDelegate.swift in Sources */,
 				3983C7872716E4A0004E4790 /* BackCardViewCell.swift in Sources */,
 				3919A57027420CD400D4E6EC /* BottomSheetTextFieldViewController.swift in Sources */,

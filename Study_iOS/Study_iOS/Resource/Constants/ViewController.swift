@@ -12,6 +12,7 @@ extension Const {
         struct Identifier {
             static let commonViewController = "CommonViewController"
             static let imageViewController = "ImageViewController"
+            static let datePickerViewController = "DatePickerViewController"
         }
     }
 }

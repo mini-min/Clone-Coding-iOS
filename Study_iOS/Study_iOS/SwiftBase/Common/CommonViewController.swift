@@ -10,7 +10,7 @@ import UIKit
 class CommonViewController: UIViewController {
 
     // MARK: - Properties
-    var studyList = ["1. 이미지 뷰(ImageView)"]
+    var studyList = ["1. 이미지 뷰(ImageView)", "2. 데이트 피커(Date Picker)"]
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var studyTableView: UITableView!
@@ -52,6 +52,8 @@ extension CommonViewController: UITableViewDelegate {
         switch indexPath.row {
         case 0: presentToNextView(sb: Const.Storyboard.Name.imageView,
                                   vc: Const.ViewController.Identifier.imageViewController)
+        case 1: presentToNextView(sb: Const.Storyboard.Name.datePicker,
+                                  vc: Const.ViewController.Identifier.datePickerViewController)
         default: print("default!")
         }
     }

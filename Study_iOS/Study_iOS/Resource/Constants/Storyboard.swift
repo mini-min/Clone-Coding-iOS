@@ -12,6 +12,7 @@ extension Const {
         struct Name {
             static let common = "Common"
             static let imageView = "ImageView"
+            static let datePicker = "DatePicker"
         }
     }
 }
