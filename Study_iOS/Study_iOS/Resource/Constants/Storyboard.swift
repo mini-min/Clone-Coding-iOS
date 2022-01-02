@@ -13,6 +13,7 @@ extension Const {
             static let common = "Common"
             static let imageView = "ImageView"
             static let datePicker = "DatePicker"
+            static let apple = "Apple"
         }
     }
 }

@@ -13,6 +13,7 @@ extension Const {
             static let commonViewController = "CommonViewController"
             static let imageViewController = "ImageViewController"
             static let datePickerViewController = "DatePickerViewController"
+            static let appleViewController = "AppleViewController"
         }
     }
 }

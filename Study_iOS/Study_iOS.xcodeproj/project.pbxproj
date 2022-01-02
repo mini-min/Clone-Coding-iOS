@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		39053B262753C5FB0072F1BC /* DarkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39053B252753C5FB0072F1BC /* DarkModeViewController.swift */; };
 		39053B282753C6170072F1BC /* DarkMode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39053B272753C6170072F1BC /* DarkMode.storyboard */; };
+		390543B5277420EA003848E7 /* AppleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390543B4277420EA003848E7 /* AppleViewController.swift */; };
+		390543B7277420EF003848E7 /* Apple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390543B6277420EF003848E7 /* Apple.storyboard */; };
 		3911B715276097AF00D4B80B /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3911B714276097AF00D4B80B /* ImageView.storyboard */; };
 		3911B717276097CA00D4B80B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3911B716276097CA00D4B80B /* ImageViewController.swift */; };
 		3919A57027420CD400D4E6EC /* BottomSheetTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919A56F27420CD400D4E6EC /* BottomSheetTextFieldViewController.swift */; };
@@ -57,6 +59,8 @@
 /* Begin PBXFileReference section */
 		39053B252753C5FB0072F1BC /* DarkModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewController.swift; sourceTree = "<group>"; };
 		39053B272753C6170072F1BC /* DarkMode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DarkMode.storyboard; sourceTree = "<group>"; };
+		390543B4277420EA003848E7 /* AppleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleViewController.swift; sourceTree = "<group>"; };
+		390543B6277420EF003848E7 /* Apple.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Apple.storyboard; sourceTree = "<group>"; };
 		3911B714276097AF00D4B80B /* ImageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageView.storyboard; sourceTree = "<group>"; };
 		3911B716276097CA00D4B80B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		3919A56F27420CD400D4E6EC /* BottomSheetTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTextFieldViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,15 @@
 				39BB924A2755DD3C00B5D424 /* ExampleTableViewCell.xib */,
 			);
 			path = DarkMode;
+			sourceTree = "<group>";
+		};
+		390543B3277420D2003848E7 /* AppleSignin */ = {
+			isa = PBXGroup;
+			children = (
+				390543B4277420EA003848E7 /* AppleViewController.swift */,
+				390543B6277420EF003848E7 /* Apple.storyboard */,
+			);
+			path = AppleSignin;
 			sourceTree = "<group>";
 		};
 		3930C0AD26F4449E009B424C /* Extensions */ = {
@@ -242,6 +255,7 @@
 		3983DF6F26F3670500539090 /* PracticeMyself */ = {
 			isa = PBXGroup;
 			children = (
+				390543B3277420D2003848E7 /* AppleSignin */,
 				39053B222753C5CD0072F1BC /* DarkMode */,
 				39543C8A274285C900EAB7FA /* SnapKit */,
 				394097042738F340006D112C /* BottomSheet */,
@@ -409,6 +423,7 @@
 				3911B715276097AF00D4B80B /* ImageView.storyboard in Resources */,
 				3940971027394DA8006D112C /* TestBottomSheetStoryboard.storyboard in Resources */,
 				39BB924C2755DD3C00B5D424 /* ExampleTableViewCell.xib in Resources */,
+				390543B7277420EF003848E7 /* Apple.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +495,7 @@
 			files = (
 				3930C0AA26F44271009B424C /* SignInViewController.swift in Sources */,
 				39DCD80227604B8400D8F73E /* Const.swift in Sources */,
+				390543B5277420EA003848E7 /* AppleViewController.swift in Sources */,
 				394097062738F380006D112C /* BottomSheetViewController.swift in Sources */,
 				39DCD80A27604BD800D8F73E /* Notification.swift in Sources */,
 				3919A57827423A2400D4E6EC /* GroupChoiceBottomSheetViewController.swift in Sources */,
@@ -646,7 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4QG3GC35LA;
+				DEVELOPMENT_TEAM = JF6B89ULG6;
 				INFOPLIST_FILE = Study_iOS/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,7 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4QG3GC35LA;
+				DEVELOPMENT_TEAM = JF6B89ULG6;
 				INFOPLIST_FILE = Study_iOS/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
