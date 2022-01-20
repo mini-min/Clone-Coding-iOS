@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39054ECE27999C5500D5D8C9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39054ECD27999C5500D5D8C9 /* String+Extension.swift */; };
 		39451FDA279987F000E99DDF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39451FD9279987F000E99DDF /* UIViewController+Extension.swift */; };
 		39451FDC27998DAA00E99DDF /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39451FDB27998DAA00E99DDF /* CALayer+Extension.swift */; };
 		39F8B655279935E5009E2A3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8B654279935E5009E2A3E /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39054ECD27999C5500D5D8C9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		39451FD9279987F000E99DDF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		39451FDB27998DAA00E99DDF /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
 		39F8B651279935E5009E2A3E /* Extensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				39F8B66D27993752009E2A3E /* UITextField+Extension.swift */,
 				39451FD9279987F000E99DDF /* UIViewController+Extension.swift */,
 				39451FDB27998DAA00E99DDF /* CALayer+Extension.swift */,
+				39054ECD27999C5500D5D8C9 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F8B659279935E5009E2A3E /* ViewController.swift in Sources */,
+				39054ECE27999C5500D5D8C9 /* String+Extension.swift in Sources */,
 				39F8B66C27993710009E2A3E /* UIAlertController+Extension.swift in Sources */,
 				39F8B655279935E5009E2A3E /* AppDelegate.swift in Sources */,
 				39451FDC27998DAA00E99DDF /* CALayer+Extension.swift in Sources */,
