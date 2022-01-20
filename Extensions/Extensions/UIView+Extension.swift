@@ -142,3 +142,22 @@ extension UIView {
     }
 }
 
+// MARK: - 그라데이션 설정하는 공통 Extension
+
+extension UIView {
+    func setGradient(color1: UIColor, color2: UIColor) {
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.colors = [color1.cgColor, color2.cgColor]
+
+        // gradient를 layer 전체에 적용해주기 위해 범위를 0.0 ~ 1.0으로 설정
+        gradient.locations = [0.0, 1.0]
+
+        // gradient 방향을 x축과는 상관없이 y축의 변화만 줌
+        gradient.startPoint = CGPoint(x: 0.5, y: 0.0)
+        gradient.endPoint = CGPoint(x: 0.5, y: 1.0)
+
+        gradient.frame = bounds
+        gradient.cornerRadius = 35
+        layer.addSublayer(gradient)
+    }
+}
