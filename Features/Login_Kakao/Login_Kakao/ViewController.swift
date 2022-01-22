@@ -68,7 +68,7 @@ extension ViewController {
                     if let error = error {
                         print(error)
                     } else {
-                        
+                        self.presentToMain()
                     }
                 }
             }
@@ -87,11 +87,17 @@ extension ViewController {
                     if let error = error {
                         print(error)
                     } else {
-                        
+                        self.presentToMain()
                     }
                 }
             }
         }
     }
+    
+    // 화면 전환 함수
+    func presentToMain() {
+        let nextVC = UserViewController()
+        nextVC.modalPresentationStyle = .overFullScreen
+        self.present(nextVC, animated: true)
+    }
 }
-
