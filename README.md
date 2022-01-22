@@ -6,6 +6,8 @@
   + [UIView+Extension](#UIView+Extension)
   + [UIViewController+Extension](#UIViewController+Extension)
   + [String+Extension](#String+Extension)
+- [Features](#Features)
+  + [Social Login](#Social Login)
 
 <br>
 
@@ -49,3 +51,13 @@
 ### String+Extension
 
 - [getChar](https://www.notion.so/String-9f8da3004d11409d957e99c89c8fae8b#d49a3446a0994d56a28b4dff987dd5e9) - Swift에서 String Indexing을 쉽게 다룰 수 있는 익스텐션 함수 
+
+<br>
+
+## Features
+
+### Social Login
+
+- [AppleLogin](https://mini-min-dev.tistory.com/94) - 애플 소셜 로그인을 iOS 앱에 구현하는 방법
+- [KakaoLogin](https://mini-min-dev.tistory.com/38) - 카카오 소셜 로그인을 iOS 앱에 구현하는 방법
+
