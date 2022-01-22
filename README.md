@@ -1,12 +1,12 @@
 # Study_iOS
-- [Extensions](#Extensions)
+- [Extensions](#Extensions) - 공통으로 재사용할 수 있는 코드를 익스텐션 함수로 정리해두었습니다.
   + [CALayer+Extension](#CALayer+Extension)
   + [UIAlertController+Extension](#UIAlertController+Extension)
   + [UITextField+Extension](#UITextField+Extension)
   + [UIView+Extension](#UIView+Extension)
   + [UIViewController+Extension](#UIViewController+Extension)
   + [String+Extension](#String+Extension)
-- [Features](#Features)
+- [Features](#Features) - iOS 개발을 할 때, 구현할 수 있는 기능들을 정리해두었습니다.
   + [SocialLogin](#SocialLogin)  
 
 <br>
