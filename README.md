@@ -7,7 +7,7 @@
   + [UIViewController+Extension](#UIViewController+Extension)
   + [String+Extension](#String+Extension)
 - [Features](#Features)
-  + [Social Login](#Social Login)
+  + [SocialLogin](#SocialLogin)  
 
 <br>
 
@@ -56,7 +56,7 @@
 
 ## Features
 
-### Social Login
+### SocialLogin
 
 - [AppleLogin](https://mini-min-dev.tistory.com/94) - 애플 소셜 로그인을 iOS 앱에 구현하는 방법
 - [KakaoLogin](https://mini-min-dev.tistory.com/38) - 카카오 소셜 로그인을 iOS 앱에 구현하는 방법
