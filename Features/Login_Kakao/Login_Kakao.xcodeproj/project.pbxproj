@@ -13,6 +13,7 @@
 		391F90AE279C0C5E00248B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391F90AC279C0C5E00248B73 /* Main.storyboard */; };
 		391F90B0279C0C5F00248B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391F90AF279C0C5F00248B73 /* Assets.xcassets */; };
 		391F90B3279C0C5F00248B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391F90B1279C0C5F00248B73 /* LaunchScreen.storyboard */; };
+		3956324E279C2A140000AAED /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956324D279C2A140000AAED /* UserViewController.swift */; };
 		F86774CF39532C2C8155EF68 /* Pods_Login_Kakao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638E118354162EB526C11DCE /* Pods_Login_Kakao.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		391F90AF279C0C5F00248B73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		391F90B2279C0C5F00248B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		391F90B4279C0C5F00248B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3956324D279C2A140000AAED /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		638E118354162EB526C11DCE /* Pods_Login_Kakao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_Kakao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F30E2EF64A89A0C0DB619B2 /* Pods-Login_Kakao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login_Kakao.debug.xcconfig"; path = "Target Support Files/Pods-Login_Kakao/Pods-Login_Kakao.debug.xcconfig"; sourceTree = "<group>"; };
 		B47CFA1F4C5DDEE43DCFBAA8 /* Pods-Login_Kakao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login_Kakao.release.xcconfig"; path = "Target Support Files/Pods-Login_Kakao/Pods-Login_Kakao.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				391F90A6279C0C5E00248B73 /* AppDelegate.swift */,
 				391F90A8279C0C5E00248B73 /* SceneDelegate.swift */,
 				391F90AA279C0C5E00248B73 /* ViewController.swift */,
+				3956324D279C2A140000AAED /* UserViewController.swift */,
 				391F90AC279C0C5E00248B73 /* Main.storyboard */,
 				391F90AF279C0C5F00248B73 /* Assets.xcassets */,
 				391F90B1279C0C5F00248B73 /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				391F90AB279C0C5E00248B73 /* ViewController.swift in Sources */,
+				3956324E279C2A140000AAED /* UserViewController.swift in Sources */,
 				391F90A7279C0C5E00248B73 /* AppDelegate.swift in Sources */,
 				391F90A9279C0C5E00248B73 /* SceneDelegate.swift in Sources */,
 			);
