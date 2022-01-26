@@ -1,0 +1,11 @@
+disabled_rules:
+- line_length
+- trailing_whitespace
+- nesting
+- function_parameter_count
+- function_body_length
+- cyclomatic_complexity
+excluded:
+- Pods
+- SwiftLint/AppDelegate.swift
+- SwiftLint/SceneDelegate.swift
