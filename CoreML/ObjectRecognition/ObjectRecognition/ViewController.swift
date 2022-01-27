@@ -44,14 +44,19 @@ extension ViewController : VideoCaptureDelegate{
                          timestamp: CMTime) {
         videoCapture.delegate = self
                 
-        guard let pixelBuffer = pixelBuffer else {
-            return
-        }
+        guard let pixelBuffer = pixelBuffer else { return }
 
         // 모델에 쓰일 이미지 준비 -> 크기 조정
-        guard CIImage(cvImageBuffer: pixelBuffer)
+        guard let scaledPixelBuffer = CIImage(cvImageBuffer: pixelBuffer)
             .resize(size: CGSize(width: 299, height: 299))
-            .toPixelBuffer(context: contex) != nil else { return }
+            .toPixelBuffer(context: contex) else { return }
+        
+        let prediction = try? self.model.prediction(image: scaledPixelBuffer)
+        
+        // 레이블 업데이트
+        DispatchQueue.main.async {
+            self.classifiedLabel.text = prediction?.classLabel ?? "Unknown"
+        }
         
     }
 }
