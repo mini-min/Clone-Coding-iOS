@@ -1,4 +1,5 @@
 # Study_iOS
+- [CodeSnippet](#CodeSnippet) - 공통으로 사용할 수 있는 코드 스니펫 코드를 정리해두었습니다.
 - [Extensions](#Extensions) - 공통으로 재사용할 수 있는 코드를 익스텐션 함수로 정리해두었습니다.
   + [CALayer+Extension](#CALayer+Extension)
   + [UIAlertController+Extension](#UIAlertController+Extension)
@@ -8,6 +9,18 @@
   + [String+Extension](#String+Extension)
 - [Features](#Features) - iOS 개발을 할 때, 구현할 수 있는 기능들을 정리해두었습니다.
   + [SocialLogin](#SocialLogin)  
+- [Libraries](#Libraries) - iOS 개발을 할 때, 사용할 수 있는 라이브러리들을 정리해두었습니다.
+  + [etc](#etc)  
+
+<br>
+
+## CodeSnippet
+
+- SnippetCodeBaseUI - 코드 베이스 기반으로 코드를 짤 때, 공통으로 재사용할 수 있도록 만든 코드 스니펫
+- SnippetCommentVC - 코드를 짤 때, MARK 주석 기반으로 구분하여 짤 수 있도록 도와주는 코드 스니펫
+- SnippetUITableView - 테이블 뷰를 만들 때, 필수로 작성해야 하는 익스텐션 부분
+- SnippetUICollectionView - 컬렉션 뷰를 만들 때, 필수로 작성해야 하는 익스텐션 부분
+- SnippetUIPickerView - 피커 뷰를 만들 때, 필수로 작성해야 하는 익스텐션 부분
 
 <br>
 
@@ -60,4 +73,12 @@
 
 - [AppleLogin](https://mini-min-dev.tistory.com/94) - 애플 소셜 로그인을 iOS 앱에 구현하는 방법
 - [KakaoLogin](https://mini-min-dev.tistory.com/38) - 카카오 소셜 로그인을 iOS 앱에 구현하는 방법
+
+<br>
+
+## Libraries
+
+### etc
+
+- [SwiftLint](https://mini-min-dev.tistory.com/47) - 협업 시, 스위프트 스타일의 클린 코드와 코딩 컨벤션을 할 수 있도록 도와주는 라이브러리
 
