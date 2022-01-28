@@ -1,5 +1,6 @@
 # Study_iOS
 - [CodeSnippet](#CodeSnippet) - 공통으로 사용할 수 있는 코드 스니펫 코드를 정리해두었습니다.
+- [CoreML](#CoreML) - Core ML 프레임워크를 사용한 경험들을 정리해두었습니다.
 - [Extensions](#Extensions) - 공통으로 재사용할 수 있는 코드를 익스텐션 함수로 정리해두었습니다.
   + [CALayer+Extension](#CALayer+Extension)
   + [UIAlertController+Extension](#UIAlertController+Extension)
@@ -21,6 +22,18 @@
 - SnippetUITableView - 테이블 뷰를 만들 때, 필수로 작성해야 하는 익스텐션 부분
 - SnippetUICollectionView - 컬렉션 뷰를 만들 때, 필수로 작성해야 하는 익스텐션 부분
 - SnippetUIPickerView - 피커 뷰를 만들 때, 필수로 작성해야 하는 익스텐션 부분
+
+<br>
+
+## CoreML
+
+- ObjectRecognition - 실세계에서 객체를 인식하는 머신러닝 프로젝트
+- FacialEmotionDetection - 사람의 얼굴 표정에 따른 감정을 탐지하는 머신러닝 프로젝트 **[구현 전]**
+- ObjectDetection - 실세계에서 객체의 위치를 측정하고, 탐지를 담당하는 머신러닝 프로젝트 **[구현 전]**
+- StyleTransfer - 스타일 전이로 예술을 창작하는 머신러닝 프로젝트 **[구현 전]**
+- QuickDraw - CNN을 사용해서 드로잉 보조하는 머신러닝 프로젝트 **[구현 전]**
+- QuickDrawRNN - RNN을 사용해서 드로잉 보조하는 머신러닝 프로젝트 **[구현 전]**
+- ActionShot - 사진 효과 애플리케이션을 구축하는 머신러닝 프로젝트 **[구현 전]**
 
 <br>
 
