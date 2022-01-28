@@ -10,6 +10,10 @@ import UIKit
 import CoreVideo
 import AVFoundation
 
+/**
+ 앱을 위한 컨트롤러, inport된 Core ML 모델과의 인터페이스를 담당하는 부분
+*/
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var previewView: CapturePreviewView!

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension CIImage{
+extension CIImage {
     
     /**
      Return a resized version of this instance (centered)
