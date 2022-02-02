@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
 // MARK: - VideoCaptureDelegate
 
-extension ViewController : VideoCaptureDelegate{
+extension ViewController : VideoCaptureDelegate {
     
     func onFrameCaptured(videoCapture: VideoCapture,
                          pixelBuffer: CVPixelBuffer?,

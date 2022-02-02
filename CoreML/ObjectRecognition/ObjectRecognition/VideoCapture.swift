@@ -82,7 +82,7 @@ public class VideoCapture: NSObject {
      This is a blocking call which can take some time, therefore you should perform session setup off
      the main queue to avoid blocking it.
      */
-    public func asyncStartCapturing(completion: (() -> Void)? = nil){
+    public func asyncStartCapturing(completion: (() -> Void)? = nil) {
         sessionQueue.async {
             if !self.captureSession.isRunning {
                 self.captureSession.startRunning()
@@ -99,7 +99,7 @@ public class VideoCapture: NSObject {
     /**
      Stop capturing frames
      */
-    public func asyncStopCapturing(completion: (() -> Void)? = nil){
+    public func asyncStopCapturing(completion: (() -> Void)? = nil) {
         sessionQueue.async {
             if self.captureSession.isRunning {
                 self.captureSession.stopRunning()
@@ -142,4 +142,3 @@ extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
     }
         
 }
-

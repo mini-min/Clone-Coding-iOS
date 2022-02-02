@@ -9,7 +9,8 @@
 import UIKit
 import Vision
 
-protocol ImageProcessorDelegate : class{
+/// 선처리가 완료되면 결과를 처리하기 위한 델리게이트
+protocol ImageProcessorDelegate: class {
     func onImageProcessorCompleted(status: Int, faces:[MLMultiArray]?)
 }
 
@@ -43,7 +44,7 @@ class ImageProcessor{
             let width = ciImage.extent.width
             let height = ciImage.extent.height
 
-            // Perform face detection
+            // 얼굴 탐지 수행
             try? self.faceDetectionRequest.perform(
                 [self.faceDetection],
                 on: ciImage)
@@ -55,7 +56,7 @@ class ImageProcessor{
              https://developer.apple.com/documentation/vision/vnfaceobservation
              Face or facial-feature information detected by an image analysis request.
              */
-            if let faceDetectionResults = self.faceDetection.results as? [VNFaceObservation]{
+            if let faceDetectionResults = self.faceDetection.results as? [VNFaceObservation] {
                 for face in faceDetectionResults{
                     let bbox = face.boundingBox
 

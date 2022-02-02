@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39F27C1727A101970005AD58 /* Inceptionv3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 39F27C1627A101970005AD58 /* Inceptionv3.mlpackage */; };
+		397C136427AA3C3A00193B09 /* Inceptionv3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 397C136327AA3C3A00193B09 /* Inceptionv3.mlpackage */; };
 		8404AC0920A248A600E1DAEA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404AC0820A248A600E1DAEA /* CoreVideo.framework */; };
 		8404AC0B20A248AE00E1DAEA /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404AC0A20A248AE00E1DAEA /* CoreML.framework */; };
 		8404AC0D20A248B400E1DAEA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404AC0C20A248B400E1DAEA /* AVFoundation.framework */; };
@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39F27C1627A101970005AD58 /* Inceptionv3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = Inceptionv3.mlpackage; path = ../../../../../Downloads/Inceptionv3.mlpackage; sourceTree = "<group>"; };
+		397C136327AA3C3A00193B09 /* Inceptionv3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = Inceptionv3.mlpackage; path = "../../../../../Downloads/iOS-CoreML-Inceptionv3-master/iOS-CoreML-Inceptionv3/Inceptionv3.mlpackage"; sourceTree = "<group>"; };
 		8404AC0820A248A600E1DAEA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		8404AC0A20A248AE00E1DAEA /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		8404AC0C20A248B400E1DAEA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -82,9 +82,9 @@
 		84CD69081FE5472200C5B7EC /* ObjectRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				397C136327AA3C3A00193B09 /* Inceptionv3.mlpackage */,
 				84CD69091FE5472200C5B7EC /* AppDelegate.swift */,
 				84CD690B1FE5472200C5B7EC /* ViewController.swift */,
-				39F27C1627A101970005AD58 /* Inceptionv3.mlpackage */,
 				84CD690D1FE5472200C5B7EC /* Main.storyboard */,
 				84CD69101FE5472200C5B7EC /* Assets.xcassets */,
 				84CD69121FE5472200C5B7EC /* LaunchScreen.storyboard */,
@@ -172,7 +172,7 @@
 				84CD69201FE6893A00C5B7EC /* CIImage.swift in Sources */,
 				84CD691E1FE6892200C5B7EC /* CaptureVideoPreviewView.swift in Sources */,
 				84CD690C1FE5472200C5B7EC /* ViewController.swift in Sources */,
-				39F27C1727A101970005AD58 /* Inceptionv3.mlpackage in Sources */,
+				397C136427AA3C3A00193B09 /* Inceptionv3.mlpackage in Sources */,
 				84CD691C1FE688EA00C5B7EC /* VideoCapture.swift in Sources */,
 				84CD690A1FE5472200C5B7EC /* AppDelegate.swift in Sources */,
 			);
