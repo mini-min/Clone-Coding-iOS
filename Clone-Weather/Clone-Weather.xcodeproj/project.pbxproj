@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39568D1E2B32F147004A60D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D1D2B32F147004A60D3 /* AppDelegate.swift */; };
+		39568D202B32F147004A60D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D1F2B32F147004A60D3 /* SceneDelegate.swift */; };
+		39568D222B32F147004A60D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D212B32F147004A60D3 /* MainViewController.swift */; };
+		39568D272B32F148004A60D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39568D262B32F148004A60D3 /* Assets.xcassets */; };
+		39568D2A2B32F148004A60D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39568D282B32F148004A60D3 /* LaunchScreen.storyboard */; };
+		39568D3D2B330048004A60D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 39568D3C2B330048004A60D3 /* SnapKit */; };
+		39568D402B330052004A60D3 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 39568D3F2B330052004A60D3 /* Then */; };
+		39568D432B33007A004A60D3 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 39568D422B33007A004A60D3 /* CombineMoya */; };
+		39568D452B33007A004A60D3 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 39568D442B33007A004A60D3 /* Moya */; };
+		39568D472B33007A004A60D3 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 39568D462B33007A004A60D3 /* ReactiveMoya */; };
+		39568D492B33007A004A60D3 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 39568D482B33007A004A60D3 /* RxMoya */; };
+		39568D4E2B330248004A60D3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 39568D4D2B330248004A60D3 /* .swiftlint.yml */; };
+		39568D572B330376004A60D3 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39568D562B330376004A60D3 /* SF-Pro.ttf */; };
+		39568D592B33042C004A60D3 /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D582B33042C004A60D3 /* FontLiterals.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39568D1A2B32F147004A60D3 /* Clone-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clone-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39568D1D2B32F147004A60D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39568D1F2B32F147004A60D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39568D212B32F147004A60D3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		39568D262B32F148004A60D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39568D292B32F148004A60D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39568D2B2B32F148004A60D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39568D4D2B330248004A60D3 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		39568D562B330376004A60D3 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		39568D582B33042C004A60D3 /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39568D172B32F147004A60D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39568D492B33007A004A60D3 /* RxMoya in Frameworks */,
+				39568D3D2B330048004A60D3 /* SnapKit in Frameworks */,
+				39568D402B330052004A60D3 /* Then in Frameworks */,
+				39568D452B33007A004A60D3 /* Moya in Frameworks */,
+				39568D472B33007A004A60D3 /* ReactiveMoya in Frameworks */,
+				39568D432B33007A004A60D3 /* CombineMoya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39568D112B32F146004A60D3 = {
+			isa = PBXGroup;
+			children = (
+				39568D4D2B330248004A60D3 /* .swiftlint.yml */,
+				39568D1C2B32F147004A60D3 /* Clone-Weather */,
+				39568D1B2B32F147004A60D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39568D1B2B32F147004A60D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39568D1A2B32F147004A60D3 /* Clone-Weather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39568D1C2B32F147004A60D3 /* Clone-Weather */ = {
+			isa = PBXGroup;
+			children = (
+				39568D2B2B32F148004A60D3 /* Info.plist */,
+				39568D312B32FE33004A60D3 /* Application */,
+				39568D342B32FE50004A60D3 /* Global */,
+				39568D332B32FE4A004A60D3 /* Network */,
+				39568D322B32FE40004A60D3 /* Presentation */,
+			);
+			path = "Clone-Weather";
+			sourceTree = "<group>";
+		};
+		39568D312B32FE33004A60D3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				39568D1D2B32F147004A60D3 /* AppDelegate.swift */,
+				39568D1F2B32F147004A60D3 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		39568D322B32FE40004A60D3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				39568D352B32FE6C004A60D3 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		39568D332B32FE4A004A60D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		39568D342B32FE50004A60D3 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				39568D3A2B330007004A60D3 /* Resources */,
+				39568D392B32FF85004A60D3 /* Literals */,
+				39568D382B32FF7A004A60D3 /* Extensions */,
+				39568D372B32FF65004A60D3 /* Supporting Files */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		39568D352B32FE6C004A60D3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				39568D362B32FE78004A60D3 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		39568D362B32FE78004A60D3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39568D212B32F147004A60D3 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		39568D372B32FF65004A60D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39568D282B32F148004A60D3 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39568D382B32FF7A004A60D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39568D392B32FF85004A60D3 /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				39568D582B33042C004A60D3 /* FontLiterals.swift */,
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+		39568D3A2B330007004A60D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39568D262B32F148004A60D3 /* Assets.xcassets */,
+				39568D4F2B3302B2004A60D3 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		39568D4F2B3302B2004A60D3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				39568D562B330376004A60D3 /* SF-Pro.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39568D192B32F147004A60D3 /* Clone-Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39568D2E2B32F148004A60D3 /* Build configuration list for PBXNativeTarget "Clone-Weather" */;
+			buildPhases = (
+				39568D162B32F147004A60D3 /* Sources */,
+				39568D172B32F147004A60D3 /* Frameworks */,
+				39568D182B32F147004A60D3 /* Resources */,
+				39568D4A2B3300B7004A60D3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clone-Weather";
+			packageProductDependencies = (
+				39568D3C2B330048004A60D3 /* SnapKit */,
+				39568D3F2B330052004A60D3 /* Then */,
+				39568D422B33007A004A60D3 /* CombineMoya */,
+				39568D442B33007A004A60D3 /* Moya */,
+				39568D462B33007A004A60D3 /* ReactiveMoya */,
+				39568D482B33007A004A60D3 /* RxMoya */,
+			);
+			productName = "Clone-Weather";
+			productReference = 39568D1A2B32F147004A60D3 /* Clone-Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39568D122B32F146004A60D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					39568D192B32F147004A60D3 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 39568D152B32F146004A60D3 /* Build configuration list for PBXProject "Clone-Weather" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39568D112B32F146004A60D3;
+			packageReferences = (
+				39568D3B2B330048004A60D3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				39568D3E2B330052004A60D3 /* XCRemoteSwiftPackageReference "Then" */,
+				39568D412B33007A004A60D3 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = 39568D1B2B32F147004A60D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39568D192B32F147004A60D3 /* Clone-Weather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39568D182B32F147004A60D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39568D4E2B330248004A60D3 /* .swiftlint.yml in Resources */,
+				39568D572B330376004A60D3 /* SF-Pro.ttf in Resources */,
+				39568D2A2B32F148004A60D3 /* LaunchScreen.storyboard in Resources */,
+				39568D272B32F148004A60D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39568D4A2B3300B7004A60D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39568D162B32F147004A60D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39568D592B33042C004A60D3 /* FontLiterals.swift in Sources */,
+				39568D222B32F147004A60D3 /* MainViewController.swift in Sources */,
+				39568D1E2B32F147004A60D3 /* AppDelegate.swift in Sources */,
+				39568D202B32F147004A60D3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39568D282B32F148004A60D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39568D292B32F148004A60D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39568D2C2B32F148004A60D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39568D2D2B32F148004A60D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39568D2F2B32F148004A60D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JF6B89ULG6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clone-Weather/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "minjae.Clone-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39568D302B32F148004A60D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JF6B89ULG6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clone-Weather/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "minjae.Clone-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39568D152B32F146004A60D3 /* Build configuration list for PBXProject "Clone-Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39568D2C2B32F148004A60D3 /* Debug */,
+				39568D2D2B32F148004A60D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39568D2E2B32F148004A60D3 /* Build configuration list for PBXNativeTarget "Clone-Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39568D2F2B32F148004A60D3 /* Debug */,
+				39568D302B32F148004A60D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39568D3B2B330048004A60D3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		39568D3E2B330052004A60D3 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		39568D412B33007A004A60D3 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39568D3C2B330048004A60D3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39568D3B2B330048004A60D3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		39568D3F2B330052004A60D3 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39568D3E2B330052004A60D3 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		39568D422B33007A004A60D3 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39568D412B33007A004A60D3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		39568D442B33007A004A60D3 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39568D412B33007A004A60D3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		39568D462B33007A004A60D3 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39568D412B33007A004A60D3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		39568D482B33007A004A60D3 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39568D412B33007A004A60D3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 39568D122B32F146004A60D3 /* Project object */;
+}
