@@ -21,6 +21,15 @@
 		39568D4E2B330248004A60D3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 39568D4D2B330248004A60D3 /* .swiftlint.yml */; };
 		39568D572B330376004A60D3 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39568D562B330376004A60D3 /* SF-Pro.ttf */; };
 		39568D592B33042C004A60D3 /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D582B33042C004A60D3 /* FontLiterals.swift */; };
+		39568D5B2B33059D004A60D3 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D5A2B33059D004A60D3 /* UIView+.swift */; };
+		39568D612B3404AB004A60D3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D602B3404AB004A60D3 /* Config.swift */; };
+		39568D632B3404BF004A60D3 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D622B3404BF004A60D3 /* NetworkResult.swift */; };
+		39568D652B3404D0004A60D3 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D642B3404D0004A60D3 /* GenericResponse.swift */; };
+		39568D672B3404DD004A60D3 /* MoyaLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D662B3404DD004A60D3 /* MoyaLoggerPlugin.swift */; };
+		39568D692B3404F3004A60D3 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D682B3404F3004A60D3 /* URLConstant.swift */; };
+		39568D6C2B34050B004A60D3 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D6B2B34050B004A60D3 /* MainAPI.swift */; };
+		39568D6E2B34051A004A60D3 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D6D2B34051A004A60D3 /* MainService.swift */; };
+		39568D702B3405AE004A60D3 /* LocationWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D6F2B3405AE004A60D3 /* LocationWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +43,15 @@
 		39568D4D2B330248004A60D3 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		39568D562B330376004A60D3 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		39568D582B33042C004A60D3 /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		39568D5A2B33059D004A60D3 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		39568D602B3404AB004A60D3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		39568D622B3404BF004A60D3 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		39568D642B3404D0004A60D3 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		39568D662B3404DD004A60D3 /* MoyaLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggerPlugin.swift; sourceTree = "<group>"; };
+		39568D682B3404F3004A60D3 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		39568D6B2B34050B004A60D3 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
+		39568D6D2B34051A004A60D3 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		39568D6F2B3405AE004A60D3 /* LocationWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +120,10 @@
 		39568D332B32FE4A004A60D3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				39568D5F2B340498004A60D3 /* Environment */,
+				39568D5E2B340495004A60D3 /* Base */,
+				39568D5D2B340481004A60D3 /* NetworkService */,
+				39568D5C2B340479004A60D3 /* Entity */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -144,6 +166,7 @@
 		39568D382B32FF7A004A60D3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				39568D5A2B33059D004A60D3 /* UIView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -171,6 +194,50 @@
 				39568D562B330376004A60D3 /* SF-Pro.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		39568D5C2B340479004A60D3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				39568D6F2B3405AE004A60D3 /* LocationWeather.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		39568D5D2B340481004A60D3 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				39568D6A2B340500004A60D3 /* Main */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		39568D5E2B340495004A60D3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				39568D622B3404BF004A60D3 /* NetworkResult.swift */,
+				39568D642B3404D0004A60D3 /* GenericResponse.swift */,
+				39568D662B3404DD004A60D3 /* MoyaLoggerPlugin.swift */,
+				39568D682B3404F3004A60D3 /* URLConstant.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		39568D5F2B340498004A60D3 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				39568D602B3404AB004A60D3 /* Config.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		39568D6A2B340500004A60D3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				39568D6B2B34050B004A60D3 /* MainAPI.swift */,
+				39568D6D2B34051A004A60D3 /* MainService.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +349,17 @@
 			files = (
 				39568D592B33042C004A60D3 /* FontLiterals.swift in Sources */,
 				39568D222B32F147004A60D3 /* MainViewController.swift in Sources */,
+				39568D6E2B34051A004A60D3 /* MainService.swift in Sources */,
 				39568D1E2B32F147004A60D3 /* AppDelegate.swift in Sources */,
+				39568D692B3404F3004A60D3 /* URLConstant.swift in Sources */,
 				39568D202B32F147004A60D3 /* SceneDelegate.swift in Sources */,
+				39568D672B3404DD004A60D3 /* MoyaLoggerPlugin.swift in Sources */,
+				39568D652B3404D0004A60D3 /* GenericResponse.swift in Sources */,
+				39568D702B3405AE004A60D3 /* LocationWeather.swift in Sources */,
+				39568D6C2B34050B004A60D3 /* MainAPI.swift in Sources */,
+				39568D5B2B33059D004A60D3 /* UIView+.swift in Sources */,
+				39568D612B3404AB004A60D3 /* Config.swift in Sources */,
+				39568D632B3404BF004A60D3 /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
