@@ -31,7 +31,7 @@ final class MainAPI {
     // MARK: - JudgeStatus methods
     private func judgeStatus<T: Codable>(by statusCode: Int, data: Data, type: T.Type) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(GenericResponse<T>.self, from: data) else { return .pathErr }
+        guard let decodedData = try? decoder.decode(LocationWeather.self, from: data) else { return .pathErr }
         switch statusCode {
         case 200:
             return .success(decodedData)

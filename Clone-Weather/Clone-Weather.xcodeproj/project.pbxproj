@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39323CD22B38406F004AAEFE /* UITableViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39323CD12B38406F004AAEFE /* UITableViewRegisterable.swift */; };
+		39323CD42B38407F004AAEFE /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39323CD32B38407F004AAEFE /* UICollectionViewRegisterable.swift */; };
 		39568D1E2B32F147004A60D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D1D2B32F147004A60D3 /* AppDelegate.swift */; };
 		39568D202B32F147004A60D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D1F2B32F147004A60D3 /* SceneDelegate.swift */; };
 		39568D222B32F147004A60D3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D212B32F147004A60D3 /* MainViewController.swift */; };
@@ -30,9 +32,26 @@
 		39568D6C2B34050B004A60D3 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D6B2B34050B004A60D3 /* MainAPI.swift */; };
 		39568D6E2B34051A004A60D3 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D6D2B34051A004A60D3 /* MainService.swift */; };
 		39568D702B3405AE004A60D3 /* LocationWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D6F2B3405AE004A60D3 /* LocationWeather.swift */; };
+		39568D752B340A07004A60D3 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D742B340A07004A60D3 /* MainTableView.swift */; };
+		39568D772B340A27004A60D3 /* MainLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39568D762B340A27004A60D3 /* MainLocationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		397F30302B3412030012DB89 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		39323CD12B38406F004AAEFE /* UITableViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewRegisterable.swift; sourceTree = "<group>"; };
+		39323CD32B38407F004AAEFE /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
 		39568D1A2B32F147004A60D3 /* Clone-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clone-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39568D1D2B32F147004A60D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39568D1F2B32F147004A60D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +71,8 @@
 		39568D6B2B34050B004A60D3 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
 		39568D6D2B34051A004A60D3 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
 		39568D6F2B3405AE004A60D3 /* LocationWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeather.swift; sourceTree = "<group>"; };
+		39568D742B340A07004A60D3 /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		39568D762B340A27004A60D3 /* MainLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLocationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39323CD02B38403A004AAEFE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				39323CD12B38406F004AAEFE /* UITableViewRegisterable.swift */,
+				39323CD32B38407F004AAEFE /* UICollectionViewRegisterable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		39568D112B32F146004A60D3 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				39568D3A2B330007004A60D3 /* Resources */,
+				39323CD02B38403A004AAEFE /* Protocols */,
 				39568D392B32FF85004A60D3 /* Literals */,
 				39568D382B32FF7A004A60D3 /* Extensions */,
 				39568D372B32FF65004A60D3 /* Supporting Files */,
@@ -142,6 +173,8 @@
 		39568D352B32FE6C004A60D3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				39568D732B3409E5004A60D3 /* Cell */,
+				39568D722B3409DC004A60D3 /* View */,
 				39568D362B32FE78004A60D3 /* ViewController */,
 			);
 			path = Main;
@@ -240,6 +273,22 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		39568D722B3409DC004A60D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39568D742B340A07004A60D3 /* MainTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39568D732B3409E5004A60D3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				39568D762B340A27004A60D3 /* MainLocationTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +300,7 @@
 				39568D172B32F147004A60D3 /* Frameworks */,
 				39568D182B32F147004A60D3 /* Resources */,
 				39568D4A2B3300B7004A60D3 /* ShellScript */,
+				397F30302B3412030012DB89 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -350,13 +400,17 @@
 				39568D592B33042C004A60D3 /* FontLiterals.swift in Sources */,
 				39568D222B32F147004A60D3 /* MainViewController.swift in Sources */,
 				39568D6E2B34051A004A60D3 /* MainService.swift in Sources */,
+				39323CD42B38407F004AAEFE /* UICollectionViewRegisterable.swift in Sources */,
 				39568D1E2B32F147004A60D3 /* AppDelegate.swift in Sources */,
+				39323CD22B38406F004AAEFE /* UITableViewRegisterable.swift in Sources */,
 				39568D692B3404F3004A60D3 /* URLConstant.swift in Sources */,
 				39568D202B32F147004A60D3 /* SceneDelegate.swift in Sources */,
 				39568D672B3404DD004A60D3 /* MoyaLoggerPlugin.swift in Sources */,
+				39568D772B340A27004A60D3 /* MainLocationTableViewCell.swift in Sources */,
 				39568D652B3404D0004A60D3 /* GenericResponse.swift in Sources */,
 				39568D702B3405AE004A60D3 /* LocationWeather.swift in Sources */,
 				39568D6C2B34050B004A60D3 /* MainAPI.swift in Sources */,
+				39568D752B340A07004A60D3 /* MainTableView.swift in Sources */,
 				39568D5B2B33059D004A60D3 /* UIView+.swift in Sources */,
 				39568D612B3404AB004A60D3 /* Config.swift in Sources */,
 				39568D632B3404BF004A60D3 /* NetworkResult.swift in Sources */,
@@ -429,6 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Weather;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -486,6 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Weather;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
