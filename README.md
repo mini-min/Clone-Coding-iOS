@@ -5,9 +5,10 @@
 
 공부를 위해 참고할 사이트는 아래와 같습니다.  
 1. [Apple Developer Documentation](https://developer.apple.com/documentation/) : Apple 개발자 공식문서입니다.
-2. [SwiftUI Tutorials](https://developer.apple.com/tutorials/swiftui) : Apple 공식문서에서 기본으로 제공해주는 SwiftUI 튜토리얼 가이드
-3. [Baekjoon](https://www.acmicpc.net/) : 알고리즘 문제 풀이 백준
-4. [Programmers](https://programmers.co.kr/) : 알고리즘 문제 풀이 사이트 프로그래머스
+2. [The Swift Programming Language (한국어)](https://bbiguduk.gitbook.io/swift/) : The Swift Programming Language Book의 한국어 번역 버전
+3. [SwiftUI Tutorials](https://developer.apple.com/tutorials/swiftui) : Apple 공식문서에서 기본으로 제공해주는 SwiftUI 튜토리얼 가이드
+4. [Baekjoon](https://www.acmicpc.net/) : 알고리즘 문제 풀이 백준
+5. [Programmers](https://programmers.co.kr/) : 알고리즘 문제 풀이 사이트 프로그래머스
 
 <br>
 
